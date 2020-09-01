@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content
+            include template/header.pug
+            .aboutme-intro
+                section
+                    h2 Hi, I&apos;m Ocha
+                    h3 A classical musician student of Melbourne Uni
+            section.aboutme-detail
+                h2 About me
+                .detail-left
+                    p
+                        | We want the e-portfolio to showcase our student life
+                        br
+                        | as well as professional achievements.
+                .detail-right
+                    h3 Here&apos;s a few of skills I have
+                    h4 ABRSM Piano Grade 8
+            section.aboutme-music
+                h2 Music sheet sample
+                .aboutme-video
+                    iframe(width='560' height='315' src='https://www.youtube.com/embed/XULUBg_ZcAU' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                | &gt;
+            section.aboutme-contact
+                h2 Contact me
+                p My email: xxx@xxx.com
+

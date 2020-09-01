@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a86ec6ea-2d55-4f76-98ab-6e7c11da8f55" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gaYgq7GPsY2YcsW3dhzsYqOWwA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/GitHub/project-eProtfolio" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a86ec6ea-2d55-4f76-98ab-6e7c11da8f55" name="Default Changelist" comment="" />
+      <created>1598354283234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598354283234</updated>
+      <workItem from="1598354284287" duration="894000" />
+      <workItem from="1598410292604" duration="1077000" />
+      <workItem from="1598412733987" duration="6696000" />
+      <workItem from="1598584108721" duration="3833000" />
+      <workItem from="1598839679997" duration="2079000" />
+      <workItem from="1598930464633" duration="11980000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="613" y="121" key="FileChooserDialogImpl" timestamp="1598431417624">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="613" y="121" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598431417624" />
+    <state width="1218" height="138" key="GridCell.Tab.0.bottom" timestamp="1598941332584">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1218" height="138" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
+    <state width="1218" height="138" key="GridCell.Tab.0.center" timestamp="1598941332584">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1218" height="138" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
+    <state width="1218" height="138" key="GridCell.Tab.0.left" timestamp="1598941332584">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1218" height="138" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
+    <state width="1218" height="138" key="GridCell.Tab.0.right" timestamp="1598941332584">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1218" height="138" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
+  </component>
+</project>
