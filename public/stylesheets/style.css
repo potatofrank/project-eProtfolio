@@ -6,6 +6,9 @@ body {
     text-align: center;
     color: #f5f5f5;
     overflow-x: hidden;
+	background-image: url("piano-1655558.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 hr {
     margin-bottom: 3em;
