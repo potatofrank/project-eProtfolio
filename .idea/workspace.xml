@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -47,6 +48,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="RunManager">
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
       <method v="2" />
@@ -57,6 +60,7 @@
       </list>
     </recent_temporary>
   </component>
+<<<<<<< Updated upstream
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -125,4 +129,6 @@
     <state width="1045" height="207" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1598922357893" />
     <state width="781" height="207" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1598935010669" />
   </component>
+=======
+>>>>>>> Stashed changes
 </project>
