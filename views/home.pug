@@ -1,121 +1,42 @@
 doctype html
 head
-    meta(charset='UTF-8')
-    title Eportfolio
-    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
-    script(src='public/javascripts/homepage.js')
-body
-    nav.button
-        ul
-            li
-                a.btn-open(href='#')
-    .overlay
-        .wrap
-    section#about.section-intro.section-white
-        .container
-            h1 Portfolio
-            hr
-            .row
-                .col-sm-8.spacing
-                    .portfolio-wrapper.container
-                        .row
-                            .text-center
-                                ul.portfolio-filter
-                                    li
-                                        a(href='#' data-filter='*') Home
-                                    li
-                                        a(href='/about' data-filter='.portfolio-tag-crafts') About
-                                    li
-                                        a(href='/campus_life' data-filter='.portfolio-tag-creative') Campus Life
-                                    li
-                                        a(href='/skills' data-filter='.portfolio-tag-illustration') Skills
-                                    li
-                                        a(href='/projects' data-filter='.portfolio-tag-media') Projects
-                                    li
-                                        a(href='/music' data-filter='.portfolio-tag-web') Music
-                            .portfolio.creek-masonry-750.col-3.gutter
-                                .post-1533.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-tag-media.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/home-page-variation/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='469' src='http://creek.themebucket.net/wp-content/uploads/2015/09/5.jpg' alt='1')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 About Myself
-                                                div
-                                                    p
-                                                        | Classical Musician Student of Melbourne Conservatorium of Music, The University of Melbourne
-                                .post-1532.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-tag-web.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/portfolio-variation/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='938' src='http://creek.themebucket.net/wp-content/uploads/2015/09/5.jpg' alt='2')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 Student Life
-                                                div
-                                                    p
-                                                        | involvement in the Melbourne Conservatorium of Music, for example: performances at the University of Melbourne Symphony Orchestra, charity events, UMSU activities
-                                .post-1531.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-tag-media.portfolio-tag-web.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/simple-variation/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='563' src='http://creek.themebucket.net/wp-content/uploads/2015/09/08b.jpg' alt='3')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 My Skills
-                                                div
-                                                    p ABRSM Piano Grade 8
-                                .post-1445.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-tag-crafts.portfolio-tag-illustration.portfolio-tag-media.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/easy-to-customize/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='469' src='http://creek.themebucket.net/wp-content/uploads/2015/09/09.jpg' alt='4')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 My Achievements
-                                                div
-                                                    p
-                                .post-1444.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/amazing-blog/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='938' src='http://creek.themebucket.net/wp-content/uploads/2015/09/7.jpg' alt='5')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 My Videos
-                                                div
-                                                    p videos and audios of my performances
-                                .post-1442.type-portfolio.status-publish.has-post-thumbnail.hentry.portfolio-tag-creative.portfolio-tag-web.portfolio-item
-                                    a.thumb(href='http://creek.themebucket.net/portfolio/bootstrap-3/')
-                                        img.attachment-creek-masonry-750.wp-post-image(width='750' height='469' src='http://creek.themebucket.net/wp-content/uploads/2015/09/9.jpg' alt='6')
-                                        .portfolio-hover
-                                            .portfolio-description
-                                                h4 My Music
-                                                div
-                                                    p some pieces and music that I composed or arranged
-                            // pagination
-                            .text-center.pagination-row
-                            // pagination
-            .row
-                .container
-                    .col-sm-12.spacing
-                        ul#techList
-                            li.html5 html5
-                            li.css3 css3
-                            li.javascript javascript
-                            li.jquery jquery
-                            li.wordpress wordpress
-                            li.webstandards web standards
-                            li.accessibility accessibility
-                            li.usability usability
-                            li.seo seo
-                            li.responsive responsive layout
-                            li.ajax ajax
-                            li.objectoriented object oriented
-                            li.crossbrowser cross browser
-                            li.jg j.g.
-                            li.skills skills
-        hr
-        section.section.section-gray.background-img
-            .row
-                .col-sm-8.col-sm-offset-2
-                    p.section-paragraph.white Contact:
-                    p.section-paragraph
-                        a.button(href='mailto:dave@pahgawks.com') mail
-                        a.button(href='https://www.twitter.com/davepvm' target='_blank') Twitter
-            .row
-                .col-sm-8.col-sm-offset-2.spacing
-                    a.hero-down(href='#')
-                        .btn-react
-                        i.fa.fa-chevron-up
+  meta(charset='UTF-8')
+  title Title
+  link(rel='stylesheet', href='public/stylesheets/style.css')
+  script(src='public/javascripts/homepage.js')
+.overlay
+  .wrap
+section#about.section-intro.section-white
+  .container
+    h1 Portfolio
+    hr
+    .row
+      .col-sm-8.spacing
+        .portfolio-wrapper.container
+          .row
+            .text-center
+              ul.portfolio-filter
+                li
+                  a(href='#', data-filter='*') Home
+                li
+                  a(href='#', data-filter='.portfolio-tag-crafts') About
+                li
+                  a(href='#', data-filter='.portfolio-tag-creative') Campus Life
+                li
+                  a(href='#', data-filter='.portfolio-tag-illustration') Skills
+                li
+                  a(href='#', data-filter='.portfolio-tag-media') Projects
+                li
+                  a(href='#', data-filter='.portfolio-tag-web') Music
+          // pagination
+          .text-center.pagination-row
+          // pagination
+  hr
+  section.section.section-gray.background-img
+    .row
+      .col-sm-8.col-sm-offset-2
+    .row
+      .col-sm-8.col-sm-offset-2.spacing
+        a.hero-down(href='#')
+          .btn-react
+          i.fa.fa-chevron-up
