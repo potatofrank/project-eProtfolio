@@ -1,14 +1,23 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const bcrypt = require("bcryptjs");
+const passport = require('passport');
+const session = require('express-session');
+const flash = require('connect-flash');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
-var app = express();
+require('./models/db.js');
 
+//connect to routes
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+
+const app = express();
+
+require('./config/passport')(passport);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -18,6 +27,27 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(
+    session({
+        secret: 'secret',
+        resave: true,
+        saveUninitialized: true
+    })
+)
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(flash());
+
+// Global variables
+app.use(function(req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
