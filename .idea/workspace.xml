@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a86ec6ea-2d55-4f76-98ab-6e7c11da8f55" name="Default Changelist" comment="" />
+    <list default="true" id="40299a24-ac01-48e2-a5c7-616bdd09454e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/aboutme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/aboutme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.pug" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,13 +15,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1gaYgq7GPsY2YcsW3dhzsYqOWwA" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hCwvlei12F2ExA93sGG3icqhVJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,26 +33,28 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.54" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/GitHub/project-eProtfolio" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunManager">
+    <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a86ec6ea-2d55-4f76-98ab-6e7c11da8f55" name="Default Changelist" comment="" />
-      <created>1598354283234</created>
+      <changelist id="40299a24-ac01-48e2-a5c7-616bdd09454e" name="Default Changelist" comment="" />
+      <created>1599528615545</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598354283234</updated>
-      <workItem from="1598354284287" duration="894000" />
-      <workItem from="1598410292604" duration="1077000" />
-      <workItem from="1598412733987" duration="6696000" />
-      <workItem from="1598584108721" duration="3833000" />
-      <workItem from="1598839679997" duration="2079000" />
-      <workItem from="1598930464633" duration="11980000" />
+      <updated>1599528615545</updated>
+      <workItem from="1599528617634" duration="14062000" />
+      <workItem from="1599620708338" duration="292000" />
     </task>
     <servers />
   </component>
@@ -52,25 +62,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="613" y="121" key="FileChooserDialogImpl" timestamp="1598431417624">
+    <state width="980" height="183" key="GridCell.Tab.0.bottom" timestamp="1599621000458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="613" y="121" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598431417624" />
-    <state width="1218" height="138" key="GridCell.Tab.0.bottom" timestamp="1598941332584">
+    <state width="980" height="183" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1599621000458" />
+    <state width="980" height="183" key="GridCell.Tab.0.center" timestamp="1599621000458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1218" height="138" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
-    <state width="1218" height="138" key="GridCell.Tab.0.center" timestamp="1598941332584">
+    <state width="980" height="183" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1599621000458" />
+    <state width="980" height="183" key="GridCell.Tab.0.left" timestamp="1599621000458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1218" height="138" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
-    <state width="1218" height="138" key="GridCell.Tab.0.left" timestamp="1598941332584">
+    <state width="980" height="183" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1599621000458" />
+    <state width="980" height="183" key="GridCell.Tab.0.right" timestamp="1599621000458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1218" height="138" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
-    <state width="1218" height="138" key="GridCell.Tab.0.right" timestamp="1598941332584">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1218" height="138" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1598941332584" />
+    <state width="980" height="183" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1599621000458" />
   </component>
 </project>

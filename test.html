@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<!--
+For more CSS Materialize Icons, (e.g. mdi-communication-phone) check this site out:
+http://materializecss.com/icons.html
+-->
+<!--
+Bob Edwin is a fictional character. If your name is Bob Edwin, then sorry, I did not mean it.
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bob Edwin</title>
+  <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/css/materialize.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="intro deep-orange lighten-2 z-depth-1">
+  <h1 class="grey-text text-lighten-5">Bob Edwin</h1>
+  <h5 clas="grey lighten-4 grey-text text-darken-1">Programmer</h5>
+</div>
+<div class="container about">
+  <h5>ABOUT ME</h5>
+  <h6>Let me introduce myself</h6>
+  <hr>
+  <div class="row">
+    <div class="col s12 m4 l4">
+      <h6>Story</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed mi odio. Aenean blandit tempor luctus. Integer nec nibh eu velit efficitur ullamcorper eu sit amet augue. Suspendisse potenti. In sodales turpis in sem aliquam tristique. Nulla facilisi. Donec non sollicitudin ligula, in feugiat lectus. Etiam faucibus libero nec ex venenatis, mattis rutrum urna facilisis. Nulla aliquam mollis tempor. Nam sed dictum nulla, ac sodales arcu. Suspendisse sed euismod ligula. Quisque ornare sed quam sed efficitur.</p>
+    </div>
+    <div class="col s12 m4 l4">
+      <h6>Profile</h6>
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
+          <p>Nullam lacinia dui a ligula tincidunt, quis auctor quam sodales. Fusce volutpat porta risus ac facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer purus mi, fringilla lacinia sollicitudin vel, hendrerit vel nisl.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4 l4">
+      <h6>Jobs</h6>
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header"><i class="mdi-av-web"></i>Sprite Designer</div>
+          <div class="collapsible-body"><p>Integer vitae lectus eget ex aliquam facilisis sit amet in velit. </p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-image-color-lens"></i>Web Designer</div>
+          <div class="collapsible-body"><p>Proin vel sapien sed lacus sodales imperdiet vel quis ante. Suspendisse ultrices viverra condimentum.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-hardware-gamepad"></i>Gamer</div>
+          <div class="collapsible-body"><p>Suspendisse mollis commodo leo hendrerit aliquet. <a href="#">Link</a> Sed sit amet interdum mauris. Nunc suscipit urna ipsum, vitae porttitor lacus tempus vel.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container portfolio">
+  <h5>Portfolio</h5>
+  <h6>My Latest Projects</h6>
+  <hr>
+  <div class="row">
+    <div class="col s12 m12 l12 portfolio-holder">
+
+      <img class="materialboxed" src="http://placehold.it/300x200">
+      <img class="materialboxed" src="http://placehold.it/300x200">
+      <img class="materialboxed" src="http://placehold.it/300x200">
+      <img class="materialboxed" src="http://placehold.it/300x200">
+      <img class="materialboxed" src="http://placehold.it/300x200">
+    </div>
+  </div>
+</div>
+<div class="container contact">
+  <h5>Conact</h5>
+  <h6>Get in touch with me</h6>
+  <hr>
+  <div class="row">
+    <div class="col s12 m6 l6">
+      <div class="row">
+        <form class="col s12" method="POST" action="contact.php">
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="first_name" id="first_name" type="text" class="validate" required>
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="last_name" id="last_name" type="text" class="validate" required>
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input name="email" id="email" type="email" class="validate" required>
+              <label for="email">E-Mail</label>
+            </div>
+          </div>
+          <textarea name="msg" class="materialize-textarea" placeholder="Your Message" required></textarea>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="col s12 m6 l6 contact-holder">
+      <h6 class="mdi-communication-phone">Phone</h6>
+      <p>987-123-4657</p>
+      <h6 class="mdi-hardware-phone-android">Skype</h6>
+      <p>bob_edwin.example</p>
+      <h6 class="mdi-action-open-in-browser">Website</h6>
+      <p>example.bobedwin.com</p>
+      <h6 class="mdi-communication-email">Email</h6>
+      <p>admin@bobedwin.com</p>
+      <h6 class="mdi-communication-live-help">Help</h6>
+      <p><a href="#">Support Page</a></p>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-copyright">
+    <div class="container">
+      ©Copyright 2015 ExampleBob Inc.
+    </div>
+  </div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/js/materialize.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>
