@@ -2,8 +2,13 @@
   "name": "eportfolio",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x",
+    "yarn": "1.x"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "@popperjs/core": "^2.4.0",
