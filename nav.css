@@ -1,4 +1,6 @@
-/* general styles */
+
+
+   /* general styles */
 
   body {
     font-family: 'Raleway', sans-serif !important;
@@ -88,12 +90,12 @@
   }
 
   .header-links a {
-    color: #757575;
+    color: steelblue;
     -webkit-transition: all 0.2s ease-in;
   }
 
   .header-links a:hover {
-    color: DarkGrey;
+    color: skyBlue;
   }
 
   /* slide out nav menu styles */
@@ -127,7 +129,7 @@
   }
 
   .nav-links a:hover {
-    color: #FF6363;
+    color: SkyBlue;
     -webkit-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
@@ -147,7 +149,7 @@
     margin-top: 5px;
     width: 0;
       height: 2px;
-      background-color: DarkGrey;
+      background-color: cadetblue;
       content: '';
     opacity: 0;
     -webkit-transition: width 0.6s, opacity 0.8s;
