@@ -1,6 +1,5 @@
 
-
-   /* general styles */
+/* general styles */
 
   body {
     font-family: 'Raleway', sans-serif !important;
@@ -149,7 +148,7 @@
     margin-top: 5px;
     width: 0;
       height: 2px;
-      background-color: cadetblue;
+      background-color: steelblue;
       content: '';
     opacity: 0;
     -webkit-transition: width 0.6s, opacity 0.8s;
