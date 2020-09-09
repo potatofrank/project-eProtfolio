@@ -26,4 +26,16 @@ router.get('/music', function(req, res) {
   res.render('music');
 });
 
+router.get('/login', function(req, res) {
+  res.render('login');
+});
+
+router.get('/userpage', function(req, res) {
+  res.render('userpage');
+});
+
+router.get('/register', function(req, res) {
+  res.render('register');
+});
+
 module.exports = router;
