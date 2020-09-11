@@ -1,0 +1,46 @@
+head
+    link(rel='stylesheet', href='/stylesheets/campus_skill.css')
+    // navbar header
+    .nav-header
+        .nav-brand
+            img(src='/image/download.png')
+        i.fa.fa-bars.fa-3x
+        .header-links
+            ul
+                li(data-menuanchor='fourthPage')
+                    a(href='/about') CONTACT
+                li(data-menuanchor='thirdPage')
+                    a(href='#portfolio') PORTFOLIO
+                li(data-menuanchor='secondPage')
+                    a(href='#about') ABOUT
+    // end navbar header
+
+    // begin section
+    .section(data-anchor='skills')
+        .content
+            h1.wow.fadeInDown(data-wow-delay='0.2s') MY SKILLS/ACHIEVEMENTS
+            .wow.fadeInUp.container-skillbar(data-wow-delay='0.2s')
+                .skillbar.clearfix(data-percent='80%')
+                    .skillbar-title(style='background: #DD1E2F;')
+                        span PIANO
+                    .skillbar-bar(style='background: #DD1E2F;')
+                    .skill-bar-percent  AMEB Grade 8
+                // End Skill Bar
+                .skillbar.clearfix(data-percent='60%')
+                    .skillbar-title(style='background: #EBB035;')
+                        span GUITAR
+                    .skillbar-bar(style='background: #EBB035;')
+                    .skill-bar-percent AMEB Grade 6
+                // End Skill Bar
+                .skillbar.clearfix(data-percent='40%')
+                    .skillbar-title(style='background: #218559;')
+                        span Flute
+                    .skillbar-bar(style='background: #218559;')
+                    .skill-bar-percent AMEB Grade 4
+                .AMED-decription AMEB stands for Australian Music Examinations Board, AMEB qualifications provide a national benchmark and measure of excellence. They are recognised across Australia and internationally.
+                // End Skill Bar
+
+
+
+    .background-img
+        img(src= "/image/orchestra.png" width="80%" class="center")
