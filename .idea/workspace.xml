@@ -27,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +38,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Pug File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,6 +56,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -82,7 +84,10 @@
       <workItem from="1599658337407" duration="6713000" />
       <workItem from="1599691780052" duration="1665000" />
       <workItem from="1599705866201" duration="11680000" />
-      <workItem from="1599729709199" duration="12944000" />
+      <workItem from="1599729709199" duration="13060000" />
+      <workItem from="1599745651531" duration="2894000" />
+      <workItem from="1599791616289" duration="4909000" />
+      <workItem from="1599796632309" duration="2878000" />
     </task>
     <servers />
   </component>
@@ -106,22 +111,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="534" y="293" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1599649271233" />
-    <state width="980" height="148" key="GridCell.Tab.0.bottom" timestamp="1599742997760">
+    <state x="498" y="268" key="FileChooserDialogImpl" timestamp="1599796482435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="980" height="148" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1599742997760" />
-    <state width="980" height="148" key="GridCell.Tab.0.center" timestamp="1599742997760">
+    <state x="498" y="268" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599796482435" />
+    <state width="977" height="148" key="GridCell.Tab.0.bottom" timestamp="1599796529856">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="980" height="148" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1599742997760" />
-    <state width="980" height="148" key="GridCell.Tab.0.left" timestamp="1599742997760">
+    <state width="977" height="148" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1599796529856" />
+    <state width="977" height="148" key="GridCell.Tab.0.center" timestamp="1599796529855">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="980" height="148" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1599742997760" />
-    <state width="980" height="148" key="GridCell.Tab.0.right" timestamp="1599742997760">
+    <state width="977" height="148" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1599796529855" />
+    <state width="977" height="148" key="GridCell.Tab.0.left" timestamp="1599796529855">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="980" height="148" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1599742997760" />
+    <state width="977" height="148" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1599796529855" />
+    <state width="977" height="148" key="GridCell.Tab.0.right" timestamp="1599796529856">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="977" height="148" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1599796529856" />
     <state x="623" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1599649358822">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
