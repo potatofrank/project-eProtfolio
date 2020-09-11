@@ -2,35 +2,34 @@ doctype html
 head
     meta(charset='UTF-8')
     title Music
+    link(rel='stylesheet', href='/stylesheets/music.css')
     style.
         body {
-            background-color: #25b79f;
+            background-color: #e1e1e1;
         }
         div{text-align:center;
             margin-top: 50px;
         }
-        .xy {
-            text-align:center;
-            float: left;
-            margin-top: 200px;
-        }
-button(type='button' style='background-color: #25b79f;color: White') Homepage
-button(type='button' style='background-color: #25b79f;color: White') About me
-div
-    font(size='100') Music
-div
 
-div
-    font(size='50') Sheet 1
-div
+    <div class="music-intro">
+        <section>
+        <h2>Music Sheet</h2>
+
+        </section>
+    </div>
 
 
-    <embed src="/image/Sheet_Music_1.pdf" width = "50%" height = "100%">
+    div
+        font(size='50') Sheet 1
+    div
+        <embed src="/image/Sheet_Music_1.pdf" width = "50%" height = 700>
 
 
-div
-    font(size='50') Sheet 2
-div
 
-    <embed src="/image/Sheet_Music_2.pdf" width = "50%" height = "100%">
+
+    div
+        font(size='50') Sheet 2
+    div
+
+        <embed src="/image/Sheet_Music_2.pdf" width = "50%" height = 700>
 
