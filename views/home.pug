@@ -1,0 +1,42 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Title
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    script(src='public/javascripts/homepage.js')
+.overlay
+    .wrap
+section#about.section-intro.section-white
+    .container
+        h1 Portfolio
+        hr
+        .row
+            .col-sm-8.spacing
+                .portfolio-wrapper.container
+                    .row
+                        .text-center
+                            ul.portfolio-filter
+                                li
+                                    a(href='#', data-filter='*') Home
+                                li
+                                    a(href='/about', data-filter='.portfolio-tag-crafts') About
+                                li
+                                    a(href='/campus_life', data-filter='.portfolio-tag-creative') Campus Life
+                                li
+                                    a(href='/skills', data-filter='.portfolio-tag-illustration') Skills
+                                li
+                                    a(href='/projects', data-filter='.portfolio-tag-media') Projects
+                                li
+                                    a(href='/music', data-filter='.portfolio-tag-web') Music
+                    // pagination
+                    .text-center.pagination-row
+                    // pagination
+    hr
+    section.section.section-gray.background-img
+        .row
+            .col-sm-8.col-sm-offset-2
+        .row
+            .col-sm-8.col-sm-offset-2.spacing
+                a.hero-down(href='#')
+                    .btn-react
+                    i.fa.fa-chevron-up
