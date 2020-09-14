@@ -14,7 +14,17 @@ exports.index = function (req, res) {
 // POST request to handle login
 exports.login_post = function (req, res, next) {
     passport.authenticate("local", {
-        successRedirect: "/userpage",
+        successRedirect: "/dashboard",
+        failureRedirect: "/users/login",
+        failureFlash: true,
+        successFlash: true,
+    })(req, res, next);
+};
+
+// POST request to handle music login
+exports.music_login_post = function (req, res, next) {
+    passport.authenticate("local", {
+        successRedirect: "/music",
         failureRedirect: "/users/login",
         failureFlash: true,
         successFlash: true,
@@ -69,11 +79,13 @@ exports.register_post = function (req, res, next) {
                     password2,
                 });
             } else {
+                const isAdmin = false;
                 const newUser = new User({
                     first_name,
                     family_name,
                     email,
                     password,
+                    isAdmin,
                 });
 
                 bcrypt.genSalt(10, (err, salt) => {
@@ -92,4 +104,11 @@ exports.register_post = function (req, res, next) {
             }
         });
     }
+};
+
+// GET request to handle logout redirects to login page
+exports.logout_get = function (req, res, next) {
+    req.logout();
+    req.flash('logoutSuccess', 'You are logged out');
+    res.render("home", { successMessage: req.flash("logoutSuccess") });
 };

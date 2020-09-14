@@ -8,11 +8,17 @@ const auth_controller = require('../controllers/authController');
 /* Login handle on POST */
 router.post('/login', auth_controller.login_post);
 
+/* Login handle on music page on POST */
+router.post('/musicLogin', auth_controller.music_login_post);
+
 /* Display Login page on GET */
 router.get('/login', auth_controller.login_get);
 
 /* Register handle on POST */
 router.post('/register', auth_controller.register_post);
+
+/* Logout handle on GET */
+router.get('/logout', auth_controller.logout_get);
 
 router.delete("/:userId", (req, res) => {
   const {userId} = req.params;
