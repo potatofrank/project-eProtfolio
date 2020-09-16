@@ -32,4 +32,8 @@ router.get('/register', function(req, res) {
   res.render('register');
 });
 
+router.get('/upload', function(req, res) {
+  res.render('upload');
+});
+
 module.exports = router;

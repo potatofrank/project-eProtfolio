@@ -4,7 +4,9 @@
       <w>abrsm</w>
       <w>bcrypt</w>
       <w>eportfolio</w>
+      <w>multer</w>
       <w>resave</w>
+      <w>sheetpdf</w>
       <w>signup</w>
       <w>userpage</w>
     </words>

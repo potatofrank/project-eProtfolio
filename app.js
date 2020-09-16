@@ -14,6 +14,7 @@ require('./models/db.js');
 //connect to routes
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const sheetsRouter = require('./routes/sheet');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
+app.use('/uploads', express.static('uploads'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -51,6 +53,7 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/sheet', sheetsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
