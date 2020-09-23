@@ -12,10 +12,14 @@ block content
                 h2 Welcome visitor
                 h2 #{user.first_name} #{user.family_name}
             h2 This is your dashboard
+            if(user.isAdmin)
+                br
+                h2 Upload any files here
+                    br
+                    a(href='/upload') Upload
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
             if (errorMessage)
                 div.aldoctype html
-
         .button
