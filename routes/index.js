@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
-const { ensureMusicAuthenticated } = require('../config/authMusic');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -10,10 +9,6 @@ router.get('/', function(req, res) {
 
 router.get('/projects', function(req, res) {
   res.render('projects');
-});
-
-router.get('/music', ensureMusicAuthenticated, function(req, res) {
-  res.render('music');
 });
 
 router.get('/login', function(req, res) {
@@ -30,10 +25,6 @@ router.get('/musicLogin', function(req, res) {
 
 router.get('/register', function(req, res) {
   res.render('register');
-});
-
-router.get('/upload', function(req, res) {
-  res.render('upload');
 });
 
 module.exports = router;

@@ -4,7 +4,9 @@
       <w>abrsm</w>
       <w>bcrypt</w>
       <w>eportfolio</w>
+      <w>fileupload</w>
       <w>multer</w>
+      <w>readstream</w>
       <w>resave</w>
       <w>sheetpdf</w>
       <w>signup</w>

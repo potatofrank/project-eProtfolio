@@ -8,9 +8,11 @@ html
     .white
         .login
             if(user.isAdmin)
-                h1 Welcome Administrator
+                h2 Welcome Admin
+                h2 #{user.first_name} #{user.family_name}
             else
-                h1 Welcome our Visitor
+                h2 Welcome visitor
+                h2 #{user.first_name} #{user.family_name}
             h2 This is your dashboard
             if (message)
                 if (error.length > 0)
@@ -20,6 +22,6 @@ html
 
         a(href='/') return to homepage
         if(user.isAdmin)
-            a(href='#') edit music sheets
+            a(href='/upload') edit music sheets
         a(href='/users/logout') logout
 

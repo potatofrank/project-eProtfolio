@@ -20,17 +20,12 @@ head
 
     a(href='/') return to homepage
 
-    div
-        font(size='50') Sheet 1
-    div
-        <embed src="/image/Sheet_Music_1.pdf" width = "50%" height = 700>
-
-
-
-
-    div
-        font(size='50') Sheet 2
-    div
-
-        <embed src="/image/Sheet_Music_2.pdf" width = "50%" height = 700>
+    if(files)
+        each file in files
+            .card.card-body.mb-3
+                if(file.isImage)
+                    h1 #{file.filename}
+                    embed(src='pdf/' + file.filename width='50%' height='700')
+    else
+        p No files to show
 
