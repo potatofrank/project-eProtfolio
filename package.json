@@ -42,11 +42,11 @@
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
-    "multer-gridfs-storage": "^4.2.0"
+    "multer-gridfs-storage": "^4.2.0",
+    "method-override": "^3.0.0"
   },
   "devDependencies": {
     "express-session": "^1.17.1",
-    "method-override": "^3.0.0",
     "nodemon": "^2.0.4"
   }
 }
