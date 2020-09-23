@@ -1,6 +1,6 @@
 .project-intro {
     width: 100%;
-    height: 600px;
+    height: 1000px;
     position: relative;
     background-image: url('/image/orchestra.jpg');
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 }
 
 .detail-text {
-    position: relative;
+    position: absolute;
     width: 100%;
     text-align: center;
     font-size: 30px;

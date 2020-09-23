@@ -1,38 +1,48 @@
-doctype html
-head
-    meta(charset='UTF-8')
-    title Project
-    link(rel='stylesheet', href='/stylesheets/project.css')
-    style.
-        body {
-            background-color: #e1e1e1;
-        }
-        div{
-            text-align center;
-            margin-top: 50px;
+extends layout
+block head
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/aboutme.css')
 
-        }
-    <div class="project-intro">
-        <section>
-        <h2>Project</h2>
 
-        </section>
-    </div>
+block content
+    head
+        meta(charset='UTF-8')
+        title Project
+        link(rel='stylesheet', href='/stylesheets/project.css')
+        style.
+            body {
+                background-color: #e1e1e1;
+            }
+            div{
+                text-align: center;
+                margin-top: 50px;
 
-    <div class="detail-img right">
-        <img src="/image/hanan_davila.jpg">
-    </div>
+            }
+        <div class="project-intro">
+            <section>
+            <h2>Project</h2>
 
-    <div class = "detail-text">
-        The University of Melbourne Symphony Orchestra 2018 - 2020
-    <div>
-    <div class = "detail-text">
-        Fire Relief Charity Concert 2019
-    <div>
-    <div class = "detail-text">
-    The Golden Stave Lunch Charity Concert May 2019
-    <div>
-    div
-        <iframe width="50%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/615523962&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ashamaluevmusic" title="AShamaluevMusic" target="_blank" style="color: #cccccc; text-decoration: none;">AShamaluevMusic</a> · <a href="https://soundcloud.com/ashamaluevmusic/piano-cinematic" title="Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)" target="_blank" style="color: #cccccc; text-decoration: none;">Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)</a></div>
+            </section>
+        </div>
 
-        <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200823225&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ashamaluevmusic" title="AShamaluevMusic" target="_blank" style="color: #cccccc; text-decoration: none;">AShamaluevMusic</a> · <a href="https://soundcloud.com/ashamaluevmusic/cinematic-piano" title="Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos &amp; Films" target="_blank" style="color: #cccccc; text-decoration: none;">Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos &amp; Films</a></div>
+        <div class="detail-img right">
+            <img src="/image/hanan_davila.jpg">
+        </div>
+
+        <div class = "detail-text">
+            The University of Melbourne Symphony Orchestra 2018 - 2020
+        <div>
+        <div class = "detail-text">
+            Fire Relief Charity Concert 2019
+        <div>
+        <div class = "detail-text">
+        The Golden Stave Lunch Charity Concert May 2019
+        <div>
+        div
+            <iframe width="50%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/615523962&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ashamaluevmusic" title="AShamaluevMusic" target="_blank" style="color: #cccccc; text-decoration: none;">AShamaluevMusic</a> · <a href="https://soundcloud.com/ashamaluevmusic/piano-cinematic" title="Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)" target="_blank" style="color: #cccccc; text-decoration: none;">Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)</a></div>
+
+            <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200823225&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ashamaluevmusic" title="AShamaluevMusic" target="_blank" style="color: #cccccc; text-decoration: none;">AShamaluevMusic</a> · <a href="https://soundcloud.com/ashamaluevmusic/cinematic-piano" title="Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos &amp; Films" target="_blank" style="color: #cccccc; text-decoration: none;">Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos &amp; Films</a></div>
