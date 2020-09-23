@@ -138,7 +138,7 @@ app.get('/music', ensureMusicAuthenticated, function(req, res) {
                     file.isImage = false;
                 }
             });
-            res.render('music', { files: files});
+            res.render('music', { files: files, user:req.user });
         }
     });
 });

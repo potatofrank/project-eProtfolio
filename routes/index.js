@@ -8,11 +8,11 @@ router.get('/', function(req, res) {
 });
 
 router.get('/projects', function(req, res) {
-  res.render('projects');
+  res.render('projects', {user:req.user});
 });
 
 router.get('/login', function(req, res) {
-  res.render('login');
+  res.render('login', {user:req.user});
 });
 
 router.get('/dashboard', ensureAuthenticated, function(req, res) {

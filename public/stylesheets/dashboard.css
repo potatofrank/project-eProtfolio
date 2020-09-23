@@ -44,15 +44,16 @@ h2{
     color: #808080;
     font-family: 'Montserrat', sans-serif;
 }
-a{
+.button{
     position:relative;
-    top:120px;
+    top:350px;
+    left:250px;
     padding: 8px 20px;
     cursor:pointer;
     border:0;
     outline:none;
     color:#525252;
-    background:#E4E4E4;
+    background:none;
     transition:all .3s ease;
     font-size: 19px;
     font-family: montserrat;
