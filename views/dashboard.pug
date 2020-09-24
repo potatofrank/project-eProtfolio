@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title= "log in"
+        link(rel='stylesheet', href='/stylesheets/userpage.css')
+    body
+    .black
+    .white
+        .login
+            if(user.isAdmin)
+                h1 Welcome Administrator
+            else
+                h1 Welcome our Visitor
+            h2 This is your dashboard
+            if (message)
+                if (error.length > 0)
+                    div.alert.alert-danger #{error}
+            if (errorMessage)
+                div.aldoctype html
+
+        a(href='/') return to homepage
+        if(user.isAdmin)
+            a(href='#') edit music sheets
+        a(href='/users/logout') logout
+

@@ -1,0 +1,36 @@
+extends layout
+block content
+    head
+        meta(charset='UTF-8')
+        title Music Sheet
+        link(rel='stylesheet', href='/stylesheets/music.css')
+        style.
+            body {
+                background-color: #e1e1e1;
+            }
+            div{text-align:center;
+                margin-top: 50px;
+            }
+
+        <div class="music-intro">
+        <section>
+        <h2>Music Sheet</h2>
+
+        </section>
+        </div>
+
+
+        div
+            font(size='50') Sheet 1
+        div
+            <embed src="/image/Sheet_Music_1.pdf" width = "50%" height = 700>
+
+
+
+
+        div
+            font(size='50') Sheet 2
+        div
+
+            <embed src="/image/Sheet_Music_2.pdf" width = "50%" height = 700>
+

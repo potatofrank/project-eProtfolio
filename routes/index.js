@@ -1,29 +1,39 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const { ensureAuthenticated } = require('../config/auth');
+const { ensureMusicAuthenticated } = require('../config/authMusic');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Express' });
+router.get('/', function(req, res) {
+  res.render('home', {user:req.user});
 });
 
-router.get('/about', function(req, res, next) {
-  res.render('about');
-});
-
-router.get('/campus_life', function(req, res, next) {
-  res.render('campus life');
-});
-
-router.get('/skills', function(req, res, next) {
-  res.render('skills');
-});
-
-router.get('/projects', function(req, res, next) {
+router.get('/projects', function(req, res) {
   res.render('projects');
 });
 
-router.get('/music', function(req, res, next) {
+router.get('/music', ensureMusicAuthenticated, function(req, res) {
   res.render('music');
+});
+
+router.get('/login', function(req, res) {
+  res.render('login');
+});
+
+router.get('/dashboard', ensureAuthenticated, function(req, res) {
+  res.render('dashboard', {user:req.user});
+});
+
+router.get('/musicLogin', function(req, res) {
+  res.render('musicLogin', {user:req.user});
+});
+
+router.get('/register', function(req, res) {
+  res.render('register');
+});
+
+router.get('/upload', function(req, res) {
+  res.render('upload');
 });
 
 module.exports = router;

@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title= "upload"
+    body
+        h1 Upload file
+        form(action='/sheet/upload' method='POST' enctype='multipart/form-data')
+            label(for='photo') Music Sheet
+            input#name(type='text' name='name' placeholder='Description' required='')
+            input#photo(type='file' name='musicSheet')
+            input(type='submit' value='upload')
