@@ -251,7 +251,7 @@ html {
     font-family: 'Raleway', sans-serif;
     background: transparent;
     padding-right: 12px;
-    transform: translateZ(0px) scaleX(0);
+    transform: translateZ(0px) scaleX(1);
     transform-origin: right;
     transition: 0.5s;
 }
@@ -376,15 +376,15 @@ html {
     position: relative;
     width: 350px;
     height: 350px;
-    margin: 60px 0 60px 70%;
+    margin: 60px 0 60px 60%;
     background: #fff;
     border-radius: 20px;
 }
 
 .detail-container .orch-box{
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 334px;
     margin: 60px 0 60px -50%;
     background: #fff;
     border-radius: 20px;
@@ -438,14 +438,14 @@ html {
     top: 10%;
     left: 100%;
     text-align: left;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.5;
     color: #684b23;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     text-shadow: 0px 1px 0px #111;
     background: transparent;
-    width: 600px;
+    width: 450px;
     padding-left: 40px;
     transform: translateZ(20px) scaleY(1);
     transform-origin: left;

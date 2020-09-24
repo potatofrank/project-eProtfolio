@@ -1,20 +1,21 @@
-body {
+.content {
     background-color: #e1e1e1;
 }
 
-div {
+.soundCloud {
     text-align: center;
     margin-top: 50px;
 }
 
 .project-intro {
     width: 100%;
-    height: 600px;
+    height: 500px;
     position: relative;
-    background-image: url('/image/orchestra.jpg');
+    background-image: url('../image/orchestra.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-top: 0px;
 }
 
 .project-intro section{
@@ -38,22 +39,20 @@ div {
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-.detail-img {
+.avatar {
     position: relative;
     overflow: hidden;
-}
-.detail-img.right {
-    width: 325px;
-    height: 325px;
+    width: 225px;
+    height: 225px;
     float: right;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-right: 5%;
     margin-top: 1%;
     shape-outside: circle();
 }
 
 .detail-text {
-    position: relative;
+    position: absolute;
     width: 100%;
     text-align: center;
     font-size: 30px;
