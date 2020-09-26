@@ -52,7 +52,7 @@ h1{
 
 h2{
   color: #0d0d0d;
-  border-bottom: 2px solid #F08080;
+  border-bottom: 3px solid #C0C0C0;
   text-align: center;
 }
 
@@ -61,7 +61,7 @@ h2{
 button[type=button],
 button[type=submit],
 button[type=reset]  {
-  background-color: #F08080;
+  background-color: #A9A9A9;
   border: none;
   color: white;
   padding: 20px 80px;
@@ -86,7 +86,7 @@ button[type=reset]  {
 button[type=button]:hover,
 button[type=submit]:hover,
 button[type=reset]:hover  {
-  background-color: #FFB6C1;
+  background-color: #C0C0C0;
 }
 
 button[type=button]:active,
@@ -138,4 +138,3 @@ input[type=password]::placeholder{
 
 * {
   box-sizing: border-box;}
-
