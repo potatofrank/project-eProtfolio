@@ -52,7 +52,7 @@ h2{
 button[type=button],
 button[type=submit],
 button[type=reset]  {
-  background-color: #F08080;
+  background-color: #A9A9A9;
   border: none;
   color: white;
   padding: 20px 80px;
@@ -77,7 +77,7 @@ button[type=reset]  {
 button[type=button]:hover,
 button[type=submit]:hover,
 button[type=reset]:hover  {
-  background-color: #FFB6C1;
+  background-color: #C0C0C0;
 }
 
 button[type=button]:active,
