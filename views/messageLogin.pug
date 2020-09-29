@@ -5,8 +5,8 @@ html
         link(rel='stylesheet', href='/stylesheets/login.css')
     body
         .login
-            h1 Please log in to view all music sheets
-            h2 if don't have an account, register
+            h1 Please log in to send messages
+            h2 if you don't have an account, register
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
@@ -25,6 +25,6 @@ html
                 button.btn.btn-primary(type='submit') Login
                 p
                 | No Account?
-                a(href='/users/register') Register
+                a(href='/users/messages') Register
                 br
                 a(href='/') Return to homepage

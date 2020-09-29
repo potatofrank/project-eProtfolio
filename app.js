@@ -18,12 +18,7 @@ const { ensureMusicAuthenticated } = require('./config/authMusic');
 //connect to database
 const uri = "mongodb+srv://ArtHur:0626@cluster0-nm8oy.mongodb.net/test?retryWrites=true&w=majority";
 
-mongoose.connect(uri,{
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-});
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 // Init gfs
 let gfs;
 mongoose.Promise = global.Promise;
@@ -60,6 +55,7 @@ const upload = multer({ storage });
 //connect to routes
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const linkRouter = require('./routes/link');
 
 const app = express();
 
@@ -100,6 +96,7 @@ app.use(function(req, res, next) {
 //use routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/link', linkRouter);
 
 //create routers
 // @route GET /
@@ -119,7 +116,7 @@ app.get('/upload', (req, res) => {
                     file.isImage = false;
                 }
             });
-            res.render('upload', { files: files });
+            res.render('upload', { files: files, user:req.user });
         }
     });
 });

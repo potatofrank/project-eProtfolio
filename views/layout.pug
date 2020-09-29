@@ -19,11 +19,13 @@ html
 
           if(!user)
             li(data-filter='.portfolio-tag-web')
-              a(href='/login') LOGIN
+              a(href='/users/login') LOGIN
           li(data-filter='.portfolio-tag-web')
             a(href='/music') MUSIC
           li(data-filter='.portfolio-tag-media')
             a(href='/projects') PROJECTS
+          li(data-filter='.portfolio-tag-media')
+            a(href='/messages') CONTACT ME
           if(user)
             li(data-filter='.portfolio-tag-web')
               a(href='/dashboard') DASHBOARD

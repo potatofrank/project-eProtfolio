@@ -1,0 +1,28 @@
+extends header
+block head
+block content
+    left-box-align
+        h1
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+
+        h1 Messages to me
+
+        if(messages)
+            each message in messages
+                h4 name: #{message.first_name} #{message.family}
+                h4 email: #{message.email}
+                h4 Phone Number: #{message.phoneNumber}
+                h4 Date of message sent: #{message.date}
+                h4 message: #{message.message}
+                form(method = 'POST' action = message._id + '?_method=DELETE')
+                    button.btn(type="submit") Delete
+                br
+                br
+        if(msg===0)
+            p There's no messages to show
