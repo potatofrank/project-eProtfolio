@@ -14,7 +14,21 @@ exports.index = function (req, res) {
 // POST request to handle login
 exports.login_post = function (req, res, next) {
     passport.authenticate("local", {
+<<<<<<< HEAD
+        successRedirect: "/dashboard",
+        failureRedirect: "/users/login",
+        failureFlash: true,
+        successFlash: true,
+    })(req, res, next);
+};
+
+// POST request to handle music login
+exports.music_login_post = function (req, res, next) {
+    passport.authenticate("local", {
+        successRedirect: "/music",
+=======
         successRedirect: "/userpage",
+>>>>>>> master
         failureRedirect: "/users/login",
         failureFlash: true,
         successFlash: true,
@@ -23,7 +37,15 @@ exports.login_post = function (req, res, next) {
 
 // GET request to display login page
 exports.login_get = function (req, res, next) {
+<<<<<<< HEAD
+    res.render("login", { message: req.flash('error'), user:req.user });
+};
+
+exports.register_get = function (req, res, next) {
+    res.render("register", { message: req.flash('error'), user:req.user });
+=======
     res.render("login", { message: req.flash('error') });
+>>>>>>> master
 };
 
 exports.register_post = function (req, res, next) {
@@ -69,11 +91,19 @@ exports.register_post = function (req, res, next) {
                     password2,
                 });
             } else {
+<<<<<<< HEAD
+                const isAdmin = false;
+=======
+>>>>>>> master
                 const newUser = new User({
                     first_name,
                     family_name,
                     email,
                     password,
+<<<<<<< HEAD
+                    isAdmin,
+=======
+>>>>>>> master
                 });
 
                 bcrypt.genSalt(10, (err, salt) => {
@@ -93,3 +123,13 @@ exports.register_post = function (req, res, next) {
         });
     }
 };
+<<<<<<< HEAD
+
+// GET request to handle logout redirects to login page
+exports.logout_get = function (req, res, next) {
+    req.logout();
+    req.flash('logoutSuccess', 'You are logged out');
+    res.render("home", { successMessage: req.flash("logoutSuccess"), user:req.user });
+};
+=======
+>>>>>>> master

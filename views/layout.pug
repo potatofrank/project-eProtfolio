@@ -3,6 +3,7 @@ html
   head
     title= "Hanan Davila"
     link(rel='stylesheet', href='/stylesheets/nav.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
     block head
   body
     // navbar header
@@ -12,20 +13,48 @@ html
       i.fa.fa-bars.fa-3x
       .header-links
         ul
-          li(data-filter='.portfolio-tag-web')
-            a(href='/login') LOGIN
+          if(user)
+            li(data-filter='.portfolio-tag-web')
+              a(href='/users/logout') LOGOUT
+
+          if(!user)
+            li(data-filter='.portfolio-tag-web')
+              a(href='/users/login') LOGIN
           li(data-filter='.portfolio-tag-web')
             a(href='/music') MUSIC
           li(data-filter='.portfolio-tag-media')
             a(href='/projects') PROJECTS
-          //li(data-filter='.portfolio-tag-illustration')
-            a(href='/skills') SKILLS
+          li(data-filter='.portfolio-tag-media')
+            a(href='/messages') CONTACT ME
+          if(user)
+            li(data-filter='.portfolio-tag-web')
+              a(href='/dashboard') DASHBOARD
+
+
           //li(data-filter='.portfolio-tag-creative')
             a(href='/campus_life') CAMPUS LIFE
           //li(data-filter='.portfolio-tag-crafts')
             a(href='/about') ABOUT
           li(data-filter='*')
-            a(href='#') HOME
+            a(href='/') HOME
     // end navbar header
-
     block content
+    link(rel='stylesheet', href='/stylesheets/aboutme.css')
+    //begin section
+    .section.fp-auto-height
+      .footer
+        p CONNECT WITH ME
+        .social-links
+          span
+            a(href='https://www.linkedin.com/in/bradleyengelhardt', target='_blank')
+              i.fa.fa-linkedin.fa-2x
+          span
+            a(target='_blank', href='https://twitter.com/bradengelhardt')
+              i.fa.fa-twitter.fa-2x
+          span
+            a(href='https://github.com/SquishyAndroid', target='_blank')
+              i.fa.fa-github.fa-2x
+          span
+            a(href='https://codepen.io/SquishyAndroid/pens/public/')
+              i.fa.fa-codepen.fa-2x
+    // end section

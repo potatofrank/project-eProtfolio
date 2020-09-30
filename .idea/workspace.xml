@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+<<<<<<< Updated upstream
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84514e43-a581-44ce-a8bb-2f52c6bc6f09" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1goW6hxV8O40uFItmAD0OXGSSc4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+=======
+>>>>>>> Stashed changes
+  <component name="RunManager">
+    <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
+  </component>
+<<<<<<< Updated upstream
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84514e43-a581-44ce-a8bb-2f52c6bc6f09" name="Default Changelist" comment="" />
+      <created>1598781251785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598781251785</updated>
+      <workItem from="1598781253874" duration="74000" />
+      <workItem from="1598921041074" duration="56000" />
+      <workItem from="1598922095202" duration="6813000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="467" y="211" key="EditFileWatcherDialog" timestamp="1598922147877">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="467" y="211" key="EditFileWatcherDialog/0.23.1440.816@0.23.1440.816" timestamp="1598922147877" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom" timestamp="1598954918880">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1598954918880" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1598922357893" />
+    <state width="781" height="207" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1598935010670" />
+    <state width="903" height="207" key="GridCell.Tab.0.center" timestamp="1598954918879">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1598954918879" />
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1598922357892" />
+    <state width="781" height="207" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1598935010669" />
+    <state width="903" height="207" key="GridCell.Tab.0.left" timestamp="1598954918878">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1598954918878" />
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1598954517902" />
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1598937439072" />
+    <state width="1045" height="207" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1598922357892" />
+    <state width="781" height="207" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1598935010668" />
+    <state width="903" height="207" key="GridCell.Tab.0.right" timestamp="1598954918879">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1598954918879" />
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1598922357893" />
+    <state width="781" height="207" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1598935010669" />
+  </component>
+=======
+>>>>>>> Stashed changes
+</project>

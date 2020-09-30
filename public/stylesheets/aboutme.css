@@ -111,13 +111,22 @@ html {
     width: 100%;
     min-height: 100vh;
     position: relative;
+<<<<<<< HEAD
+    background-image: url("/image/header-back.jpg");
+=======
     background-image: url("../image/header-back.jpg");
+>>>>>>> master
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+<<<<<<< HEAD
+.aboutme-header .header-type {
+    position: relative;
+=======
 .aboutme-header h2 {
     position: absolute;
+>>>>>>> master
     font-size: 85px;
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -125,7 +134,23 @@ html {
     text-align: center;
     color: #fff;
     text-shadow: 4px 4px 8px #111;
+<<<<<<< HEAD
+    padding-top: 34vh;
+}
+
+.aboutme-header .header-intro {
+    position: relative;
+    font-size: 75px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 4px 8px #111;
+    padding-top: 5%;
+=======
     padding-top: 22%;
+>>>>>>> master
 }
 
 .header-scroll {
@@ -180,7 +205,11 @@ html {
     width: 100%;
     min-height: 100vh;
     position: relative;
+<<<<<<< HEAD
+    background-image: url('/image/pianoback.png');
+=======
     background-image: url('../image/pianoback.png');
+>>>>>>> master
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -213,7 +242,11 @@ html {
     position: relative;
     height: 12px;
     width: 12px;
+<<<<<<< HEAD
+    background-image: url("/image/dot.png");
+=======
     background-image: url("../image/dot.png");
+>>>>>>> master
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
@@ -239,7 +272,11 @@ html {
     font-family: 'Raleway', sans-serif;
     background: transparent;
     padding-right: 12px;
+<<<<<<< HEAD
+    transform: translateZ(0px) scaleX(1);
+=======
     transform: translateZ(0px) scaleX(0);
+>>>>>>> master
     transform-origin: right;
     transition: 0.5s;
 }
@@ -364,15 +401,24 @@ html {
     position: relative;
     width: 350px;
     height: 350px;
+<<<<<<< HEAD
+    margin: 60px 0 60px 60%;
+=======
     margin: 60px 0 60px 70%;
+>>>>>>> master
     background: #fff;
     border-radius: 20px;
 }
 
 .detail-container .orch-box{
     position: relative;
+<<<<<<< HEAD
+    width: 500px;
+    height: 334px;
+=======
     width: 600px;
     height: 400px;
+>>>>>>> master
     margin: 60px 0 60px -50%;
     background: #fff;
     border-radius: 20px;
@@ -416,7 +462,11 @@ html {
     text-shadow: 0px 1px 0px #111;
     padding-right: 40px;
     width: 500px;
+<<<<<<< HEAD
+    transform: translateZ(20px) scaleY(1);
+=======
     transform: translateZ(20px) scaleY(0);
+>>>>>>> master
     transform-origin: right;
     transition: 0.5s;
 }
@@ -426,16 +476,26 @@ html {
     top: 10%;
     left: 100%;
     text-align: left;
+<<<<<<< HEAD
+    font-size: 24px;
+=======
     font-size: 26px;
+>>>>>>> master
     line-height: 1.5;
     color: #684b23;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     text-shadow: 0px 1px 0px #111;
     background: transparent;
+<<<<<<< HEAD
+    width: 450px;
+    padding-left: 40px;
+    transform: translateZ(20px) scaleY(1);
+=======
     width: 600px;
     padding-left: 40px;
     transform: translateZ(20px) scaleY(0);
+>>>>>>> master
     transform-origin: left;
     transition: 0.5s;
 }
@@ -546,6 +606,20 @@ html {
 
 .skill-container .skill-box .icon {
     position: absolute;
+<<<<<<< HEAD
+    /*top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    background: #fff;
+    transition: 0.5s;
+    z-index: 1;
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+=======
     top: 0;
     left: 0;
     width: 100%;
@@ -553,6 +627,7 @@ html {
     background: #fff;
     transition: 0.5s;
     z-index: 1;
+>>>>>>> master
 }
 
 .skill-container .skill-box:hover .icon {
@@ -578,13 +653,23 @@ html {
 
 .skill-container .skill-box .content {
     position: relative;
+<<<<<<< HEAD
+=======
     top: 100%;
+>>>>>>> master
     height: calc(100% - 120px);
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
     transition: 0.5s;
+<<<<<<< HEAD
+    /*opacity: 0;
+    top: 100%;*/
+    top: 100px;
+    opacity: 1;
+=======
     opacity: 0;
+>>>>>>> master
 }
 
 .content h2 {
@@ -639,11 +724,35 @@ html {
     color: #f00;
 }
 
+<<<<<<< HEAD
+.music-sheet h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    color: #6b69a6;
+}
+
+.music-sheet p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #6b69a6;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 80px;
+=======
 /* footer styles */
 
 .swiper-container {
     width: 100%;
     padding-top: 100px;
+>>>>>>> master
     padding-bottom: 100px;
 }
 
@@ -661,6 +770,11 @@ html {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+/* footer styles */
+
+=======
+>>>>>>> master
 body {
     font-family: 'Raleway', sans-serif;
 }

@@ -1,8 +1,24 @@
+<<<<<<< HEAD
+.container {
+    background-color: #e1e1e1;
+}
+
+div {text-align:center;
+    margin-top: 50px;
+}
+
+
+=======
+>>>>>>> master
 .music-intro {
     width: 100%;
     height: 600px;
     position: relative;
+<<<<<<< HEAD
+    background-image: url('../image/pianoba.png');
+=======
     background-image: url('/image/pianoba.png');
+>>>>>>> master
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,3 +45,8 @@
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> master

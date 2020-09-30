@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title= "Hanan Davila"
+        link(rel='stylesheet', href='/stylesheets/nav.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+        block head
+    body
+        // navbar header
+        .nav-header
+            .nav-brand
+                img(src='https://d2glwx35mhbfwf.cloudfront.net/v7.1.2/logo-with-padding.svg')
+            i.fa.fa-bars.fa-3x
+            .header-links
+                ul
+                    if(user)
+                        li(data-filter='.portfolio-tag-web')
+                            a(href='/users/logout') LOGOUT
+
+                    if(!user)
+                        li(data-filter='.portfolio-tag-web')
+                            a(href='/login') LOGIN
+                    li(data-filter='.portfolio-tag-web')
+                        a(href='/music') MUSIC
+                    li(data-filter='.portfolio-tag-media')
+                        a(href='/projects') PROJECTS
+                    if(user)
+                        li(data-filter='.portfolio-tag-web')
+                            a(href='/dashboard') DASHBOARD
+                    li(data-filter='*')
+                        a(href='/') HOME
+        block content
