@@ -5,13 +5,21 @@ html
         link(rel='stylesheet', href='/stylesheets/register.css')
     body
         left-box-align
+<<<<<<< HEAD
 
+=======
+            if (errorMessage)
+                .alert.alert-danger #{errorMessage}
+>>>>>>> master
             h1
                 i
                 | Register
             form(action='/users/register', method='POST')
+<<<<<<< HEAD
                 if (errorMessage)
                     .alert.alert-danger #{errorMessage}
+=======
+>>>>>>> master
                 .form-group
                     label(for='first_name') First Name
                     input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
@@ -30,6 +38,11 @@ html
                 button.btn.btn-primary(type='submit') Register
                 p
                 | Have An Account?
+<<<<<<< HEAD
                 a(href='/users/login') Login
                 br
                 a(href='/') Return to homepage
+=======
+                a(href='/login') Login
+
+>>>>>>> master
