@@ -1,0 +1,24 @@
+extends layout
+block head
+    link(rel='stylesheet', href='/stylesheets/userpage.css')
+block content
+    body
+      .login
+        if(user.isAdmin)
+          h2 Welcome Admin
+          h2 #{user.first_name} #{user.family_name}
+            else
+              h2 Welcome visitor
+              h2 #{user.first_name} #{user.family_name}
+          h3 This is your dashboard
+          if (message)
+              if (error.length > 0)
+                  div.alert.alert-danger #{error}
+          if (errorMessage)
+              div.aldoctype html
+
+         .button
+           a(href='/') return to homepage
+           if(user.isAdmin)
+             a(href='/upload') edit music sheets
+           a(href='/users/logout') logout
