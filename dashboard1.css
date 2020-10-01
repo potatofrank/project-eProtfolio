@@ -1,0 +1,44 @@
+body{
+  background:black;
+  background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+h2{
+  position: absolute;
+  color:white;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'Cutive Mono', monospace;
+  font-size:3.5em;
+  text-align:center;
+  border: 2px solid white;
+}
+h3{
+  position: absolute;
+  color:white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'Cutive Mono', monospace;
+  font-size:2.5em;
+  text-align:center;
+}
+.button{
+  font-family: 'Cutive Mono', monospace;
+  border-top: 1.3px solid white;
+  border-bottom: 1.3px solid white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+a{
+  color:white;
+  font-size:1.5em;
+  text-align:center;
+}
