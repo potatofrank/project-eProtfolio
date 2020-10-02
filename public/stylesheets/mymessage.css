@@ -29,7 +29,7 @@ h1 {
     font-size: 25px;
     padding-left: 25px;
 }
-button{
+button.view{
     float: right;
     background-color: #81BDA4;
     color: #FFF;
@@ -40,7 +40,7 @@ button{
     cursor: pointer;
     font-size: 18px;
 }
-del-button{
+button{
     float: right;
     background-color: #FF0041;
     color: #FFF;
