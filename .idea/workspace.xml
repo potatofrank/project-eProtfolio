@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +20,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40299a24-ac01-48e2-a5c7-616bdd09454e" name="Default Changelist" comment="" />
+    <list default="true" id="84514e43-a581-44ce-a8bb-2f52c6bc6f09" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +30,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Pug File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -38,20 +37,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1hCwvlei12F2ExA93sGG3icqhVJ" />
+  <component name="ProjectId" id="1goW6hxV8O40uFItmAD0OXGSSc4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/project-eProtfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="RunManager">
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/bin/www" working-dir="$PROJECT_DIR$/bin">
       <method v="2" />
@@ -62,38 +60,25 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+<<<<<<< Updated upstream
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40299a24-ac01-48e2-a5c7-616bdd09454e" name="Default Changelist" comment="" />
-      <created>1599528615545</created>
+      <changelist id="84514e43-a581-44ce-a8bb-2f52c6bc6f09" name="Default Changelist" comment="" />
+      <created>1598781251785</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599528615545</updated>
-      <workItem from="1599528617634" duration="14062000" />
-      <workItem from="1599620708338" duration="292000" />
-      <workItem from="1599627752690" duration="14780000" />
-      <workItem from="1599658337407" duration="6713000" />
-      <workItem from="1599691780052" duration="1665000" />
-      <workItem from="1599705866201" duration="11680000" />
-      <workItem from="1599729709199" duration="13060000" />
-      <workItem from="1599745651531" duration="2894000" />
-      <workItem from="1599791616289" duration="4909000" />
-      <workItem from="1599796632309" duration="3602000" />
-      <workItem from="1599802680526" duration="2561000" />
-      <workItem from="1599825511143" duration="4512000" />
-      <workItem from="1599869838436" duration="9289000" />
-      <workItem from="1600859348658" duration="898000" />
-      <workItem from="1600862647439" duration="905000" />
-      <workItem from="1600868613769" duration="439000" />
-      <workItem from="1600917604810" duration="609000" />
-      <workItem from="1600918444713" duration="586000" />
-      <workItem from="1601440863180" duration="13000" />
+      <updated>1598781251785</updated>
+      <workItem from="1598781253874" duration="74000" />
+      <workItem from="1598921041074" duration="56000" />
+      <workItem from="1598922095202" duration="6813000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -105,36 +90,45 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="534" y="293" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599649271233">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="467" y="211" key="EditFileWatcherDialog" timestamp="1598922147877">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state x="534" y="293" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1599649271233" />
-    <state x="498" y="268" key="FileChooserDialogImpl" timestamp="1601440873353">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="467" y="211" key="EditFileWatcherDialog/0.23.1440.816@0.23.1440.816" timestamp="1598922147877" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom" timestamp="1598954918880">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="498" y="268" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601440873353" />
-    <state width="1364" height="150" key="GridCell.Tab.0.bottom" timestamp="1600918345282">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1598954918880" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1598922357893" />
+    <state width="781" height="207" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1598935010670" />
+    <state width="903" height="207" key="GridCell.Tab.0.center" timestamp="1598954918879">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1364" height="150" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600918345282" />
-    <state width="1364" height="150" key="GridCell.Tab.0.center" timestamp="1600918345282">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1598954918879" />
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1598922357892" />
+    <state width="781" height="207" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1598935010669" />
+    <state width="903" height="207" key="GridCell.Tab.0.left" timestamp="1598954918878">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1364" height="150" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1600918345282" />
-    <state width="1364" height="150" key="GridCell.Tab.0.left" timestamp="1600918345282">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1598954918878" />
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1598954517902" />
+    <state width="903" height="207" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1598937439072" />
+    <state width="1045" height="207" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1598922357892" />
+    <state width="781" height="207" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1598935010668" />
+    <state width="903" height="207" key="GridCell.Tab.0.right" timestamp="1598954918879">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1364" height="150" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1600918345282" />
-    <state width="1364" height="150" key="GridCell.Tab.0.right" timestamp="1600918345282">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1364" height="150" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1600918345282" />
-    <state x="623" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1599649358822">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="623" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1599649358822" />
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1598954918879" />
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1598954517903" />
+    <state width="903" height="207" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1598937439073" />
+    <state width="1045" height="207" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1598922357893" />
+    <state width="781" height="207" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1598935010669" />
   </component>
+=======
+>>>>>>> Stashed changes
 </project>

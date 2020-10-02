@@ -1,11 +1,11 @@
 extends layout
 block head
-        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
-        link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
-        link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
-        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
-        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet")
-        link(rel='stylesheet', href='/stylesheets/aboutme.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/home.css')
 block content
     section#header.aboutme-header
         h2.header-type
@@ -72,8 +72,8 @@ block content
                             | Last year, I successfully became an Orchestral Ensemble student at the Melbourne Conservatorium of Music, and participated in two out of four annual public performances, one of which was held overseas in Singapore. I&rsquo;m also the secretary
                             | of the Music Student&rsquo;s Society at the University.
     <!-- section.aboutme-hint(data-aos='fade-out')
-        h2
-            | This e-Portfolio contains examples of my performance, music composition and other related experiences. Please feel free to explore my website. -->
+    h2
+        | This e-Portfolio contains examples of my performance, music composition and other related experiences. Please feel free to explore my website. -->
     section#skill.music-skills(data-aos='fade-out')
         h2.skill-header Music skills and Achievements
         .skill-container
@@ -105,11 +105,11 @@ block content
             a(href='/login') Login
             |  right now!
         <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/image/musicsheet1-1.jpg"></div>
-                <div class="swiper-slide"><img src="/image/musicsheet1-2.jpg"></div>
-                <div class="swiper-slide"><img src="/image/musicsheet1-3.jpg"></div>
-            </div>
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/image/musicsheet1-1.jpg"></div>
+        <div class="swiper-slide"><img src="/image/musicsheet1-2.jpg"></div>
+        <div class="swiper-slide"><img src="/image/musicsheet1-3.jpg"></div>
+        </div>
         </div>
     section#contact
         .container-fluid
@@ -146,22 +146,6 @@ block content
                             .col-sm-12
                                 input.submit-button(type='submit' value='Send Message')
     // begin section
-    .section.fp-auto-height
-        .footer
-            p CONNECT WITH ME
-            .social-links
-                span
-                    a(href='https://www.linkedin.com/in/bradleyengelhardt', target='_blank')
-                        i.fa.fa-linkedin.fa-2x
-                span
-                    a(target='_blank', href='https://twitter.com/bradengelhardt')
-                        i.fa.fa-twitter.fa-2x
-                span
-                    a(href='https://github.com/SquishyAndroid', target='_blank')
-                        i.fa.fa-github.fa-2x
-                span
-                    a(href='https://codepen.io/SquishyAndroid/pens/public/')
-                        i.fa.fa-codepen.fa-2x
     // end section
     script(src='https://code.jquery.com/jquery-3.5.1.js', integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=', crossorigin='anonymous')
     script(type='text/javascript').

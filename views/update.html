@@ -1,71 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/upload.css">
 </head>
 <body>
-  <section id="contact">
-    <div class="container-fluid">
-      <div class="contact-container">
-        <div class="formBox">
-          <form>
-            <div class="row">
-              <div class="col-sm-12">
-                <h2>Contact Us</h2>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="inputBox">
-                    <div class="inputText">First Name</div>
-                    <input type="text" class="input">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="inputBox">
-                    <div class="inputText">Last Name</div>
-                    <input type="text" class="input">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="inputBox">
-                    <div class="inputText">Email</div>
-                    <input type="text" class="input">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="inputBox">
-                    <div class="inputText">Mobile</div>
-                    <input type="text" class="input">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="inputBox">
-                    <div class="inputText">Email</div>
-                    <textarea class="input"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <input type="submit" value="Send Message" class="submit-button">
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div class="drop-zone">
+        <h2>To upload a link, at the music’s SoundCloud page, select <span>share->embed</span>, copy the long string in the box and paste it below</h2>
+        <span class="drop-zone-prompt">Drop file here or click to upload</span>
+        <div class="drop-zone--thumb" data-label="myFile.txt"></div>
+        <input type="file" name="myFile" class="drop-zone--input">
     </div>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(".input").focus(function (){
-      $(this).parent().addClass("focus");
-    })
-  </script>
+
+    <script src="/javascripts/upload.js"></script>
 </body>
 </html>

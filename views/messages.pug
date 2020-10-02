@@ -1,0 +1,31 @@
+extends layout
+block head
+    title Send a message to me
+block content
+    br
+    br
+    br
+    br
+    br
+    br
+    if (errorMessage)
+        .alert.alert-danger #{errorMessage}
+    else if(successMessage)
+        .alert.alert-danger #{successMessage}
+    form(action='/users/messages', method='POST')
+        .form-group
+            label(for='first_name') First Name
+            input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
+        .form-group
+            label(for='family_name') Family Name
+            input#family_name.form-control(type='name', name='family_name', value=family_name, placeholder='Enter Family Name')
+        .form-group
+            label(for='email') Email
+            input#email.form-control(type='email', name='email', value=email, placeholder='Enter email')
+        .form-group
+            label(for='phoneNumber') Phone number
+            input#phoneNumber.form-control(type='phoneNumber', name='phoneNumber', value=phoneNumber, placeholder='Enter phone number')
+        .form-group
+            label(for='message') Message
+            input#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
+        button.btn.btn-primary(type='submit') Submit

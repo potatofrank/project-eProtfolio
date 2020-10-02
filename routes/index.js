@@ -1,29 +1,30 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const { ensureAuthenticated } = require('../config/auth');
+const { ensureMessageAuthenticated } = require('../config/authMessage');
 
+const Link = require("../models/links");
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Express' });
+router.get('/', function(req, res) {
+  res.render('home', {user:req.user});
 });
 
-router.get('/about', function(req, res, next) {
-  res.render('about');
+router.get('/dashboard', ensureAuthenticated, function(req, res) {
+  res.render('dashboard', {user:req.user});
 });
 
-router.get('/campus_life', function(req, res, next) {
-  res.render('campus life');
+router.get('/messages', ensureMessageAuthenticated, function(req, res) {
+    res.render('messages', {user:req.user});
 });
 
-router.get('/skills', function(req, res, next) {
-  res.render('skills');
+router.get('/projects', function(req, res) {
+  Link.find()
+      .lean()
+      .then(function (doc) {
+        res.render('projects', {links: doc, user:req.user});
+      });
 });
 
-router.get('/projects', function(req, res, next) {
-  res.render('projects');
-});
 
-router.get('/music', function(req, res, next) {
-  res.render('music');
-});
 
 module.exports = router;

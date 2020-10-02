@@ -1,21 +1,32 @@
-doctype html
-head
+extends layout
+block head
     meta(charset='UTF-8')
     title Project
-    style.
-        body {
-            background-color: #25b79f;
-        }
-        div{text-align:center;
-            margin-top: 50px;
-        }
-        .xy {
-            text-align:center;
-            float: left;
-            margin-top: 200px;
-        }
-button(type='button' style='background-color: #25b79f;color: White') Homepage
-button(type='button' style='background-color: #25b79f;color: White') About me
-div
-    font(size='100') Project
-div --------------------
+    link(rel='stylesheet', href='/stylesheets/project.css')
+
+block content
+    .container
+        .project-intro
+            section
+                h2 Project
+        .avatar
+            img(src='/image/hanan_davila.jpg')
+        .detail-text
+            | The University of Melbourne Symphony Orchestra 2018 - 2020
+        .detail-text
+            | Fire Relief Charity Concert 2019
+        .detail-text
+            | The Golden Stave Lunch Charity Concert May 2019
+        br
+        br
+
+        .soundCloud
+            each link in links
+                h4 #{link.name}
+                iframe(width='50%' height='300' scrolling='no' frameborder='no' allow='autoplay' src= link.link)
+                br
+                br
+                br
+
+
+
