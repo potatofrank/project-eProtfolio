@@ -1,7 +1,12 @@
 extends layout
 block head
     title Send a message to me
+    link(rel='stylesheet', href='/stylesheets/contactme.css')
 block content
+    br
+    br
+    br
+    br
     br
     br
     br
@@ -12,20 +17,61 @@ block content
         .alert.alert-danger #{errorMessage}
     else if(successMessage)
         .alert.alert-danger #{successMessage}
-    form(action='/users/messages', method='POST')
-        .form-group
-            label(for='first_name') First Name
-            input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
-        .form-group
-            label(for='family_name') Family Name
-            input#family_name.form-control(type='name', name='family_name', value=family_name, placeholder='Enter Family Name')
-        .form-group
-            label(for='email') Email
-            input#email.form-control(type='email', name='email', value=email, placeholder='Enter email')
-        .form-group
-            label(for='phoneNumber') Phone number
-            input#phoneNumber.form-control(type='phoneNumber', name='phoneNumber', value=phoneNumber, placeholder='Enter phone number')
-        .form-group
-            label(for='message') Message
-            input#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
-        button.btn.btn-primary(type='submit') Submit
+    container
+        form(action='/users/messages', method='POST')
+    //button.btn.btn-primary(type='submit') Submit
+
+    bodyC
+        h5 Contact Me.
+
+    form789
+        h1 Should you have any questions, please do not hesitate to contact me :
+        .contentform
+            #sendmessage  Your message has been sent successfully. Thank you.
+            .leftcontact
+                .form-group
+                    p
+                        | First Name
+                        span *
+                    span.icon-case
+                        i.fa.fa-male
+                    input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
+                    .validation
+                .form-group
+                    p
+                        | Family Name
+                        span *
+                    span.icon-case
+                        i.fa.fa-user
+                    input#family_name.form-control(type='name', name='family_name', value=family_name, placeholder='Enter Family Name')
+                    .validation
+                .form-group
+                    p
+                        | E-mail
+                        span *
+                    span.icon-case
+                        i.fa.fa-envelope-o
+                    input#email.form-control(type='email', name='email', value=email, placeholder='Enter email')
+                    .validation
+
+
+            .rightcontact
+
+                .form-group
+                    p
+                        | Phone number
+                        span *
+                    span.icon-case
+                        i.fa.fa-phone
+                    input#phoneNumber.form-control(type='phoneNumber', name='phoneNumber', value=phoneNumber, placeholder='Enter phone number')
+                    .validation
+
+                .form-group
+                    p
+                        | Message
+                        span *
+                    span.icon-case
+                        i.fa.fa-comments-o
+                    textarea#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
+                    .validation
+            button.bouton-contact(type='submit') Send
