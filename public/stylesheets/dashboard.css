@@ -1,44 +1,61 @@
-body{
-    background:black;
-    background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
-    height:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.black {
+    width: 50%;
+    float: left;
+    background: #A9A9A9;
+    height: 100vh;
+}
 
+.white{
+    width: 50%;
+    float: right;
+    background: #696969;
+    height: 100vh;
 }
+body{
+    width:100%;
+    position:absolute;
+    color: #E4E4E4;
+}
+.login{
+    height: 400px;
+    width: 500px;
+    background: white;
+    position:absolute;
+    top:150px;
+    left:0;
+    right:0;
+    margin:auto;
+    border-radius:20px;
+}
+
+h1{
+    color: #808080;
+    font-size: 5em;
+    text-align: center;
+    position: relative;
+    top:30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 h2{
-    position: absolute;
-    color:white;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-family: 'Cutive Mono', monospace;
-    font-size:3.5em;
-    text-align:center;
-    border: 2px solid white;
-}
-h3{
-    position: absolute;
-    color:white;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-family: 'Cutive Mono', monospace;
-    font-size:2.5em;
-    text-align:center;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #808080;
+    font-family: 'Montserrat', sans-serif;
 }
 .button{
-    font-family: 'Cutive Mono', monospace;
-    border-top: 1.3px solid white;
-    border-bottom: 1.3px solid white;
-    position:absolute;
-    bottom:0;
-    width:100%;
-}
-a{
-    color:white;
-    font-size:1.5em;
-    text-align:center;
+    position:relative;
+    top:350px;
+    left:250px;
+    padding: 8px 20px;
+    cursor:pointer;
+    border:0;
+    outline:none;
+    color:#525252;
+    background:none;
+    transition:all .3s ease;
+    font-size: 19px;
+    font-family: montserrat;
+    border-radius:5px;
 }

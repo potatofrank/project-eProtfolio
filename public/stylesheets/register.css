@@ -4,7 +4,6 @@
 
 body {
     background: #606468;
-    background-image: url("https://p0.pxfuel.com/preview/599/70/418/lyrics-sheet-music-note-music.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -53,7 +52,7 @@ h2{
 button[type=button],
 button[type=submit],
 button[type=reset]  {
-    background-color: #A9A9A9;
+    background-color: #F08080;
     border: none;
     color: white;
     padding: 20px 80px;
@@ -78,7 +77,7 @@ button[type=reset]  {
 button[type=button]:hover,
 button[type=submit]:hover,
 button[type=reset]:hover  {
-    background-color: #C0C0C0;
+    background-color: #FFB6C1;
 }
 
 button[type=button]:active,
