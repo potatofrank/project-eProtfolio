@@ -13,12 +13,6 @@ block content
     br
     br
     br
-    if (errorMessage)
-        .alert.alert-danger #{errorMessage}
-    else if(successMessage)
-        .alert.alert-danger #{successMessage}
-
-    //button.btn.btn-primary(type='submit') Submit
 
     bodyC
         h5 Contact Me.
@@ -26,6 +20,10 @@ block content
         form(action='/users/messages', method='POST')
             form789
                 h1 Should you have any questions, please do not hesitate to contact me :
+                if (errorMessage)
+                    .alert.alert-danger #{errorMessage}
+                else if(successMessage)
+                    .alert.alert-danger #{successMessage}
                 .contentform
                     #sendmessage  Your message has been sent successfully. Thank you.
                     .leftcontact
