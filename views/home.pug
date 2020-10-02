@@ -8,21 +8,10 @@ block head
     link(rel='stylesheet', href='/stylesheets/home.css')
 block content
     section#header.aboutme-header
-        h2.header-type
-        h2.header-intro
+        h2.header-type Hi! My name is Hanan Davila
+        h2.header-intro Welcome to my e-Portfolio!
         a(href='#about')
             .header-scroll
-        script(type='text/javascript' src='/javascripts/typed.js')
-        script(type='text/javascript').
-            const typed = new Typed('.header-type', {
-                strings: ['Hi! My name is Hanan Davila'],
-                typeSpeed: 30,
-            });
-            const ntyped = new Typed('.header-intro', {
-                strings: ['Welcome to my e-Portfolio!'],
-                typeSpeed: 30,
-                startDelay: 1200,
-            });
         .nav-slider
             a(href='#header')
                 .navs-box
@@ -40,10 +29,6 @@ block content
                 .navs-box
                     .navs-content
                         h2 music sheet
-            a(href='#contact')
-                .navs-box
-                    .navs-content
-                        h2 contact
     section#about.aboutme-detail(data-aos='fade-out')
         section
             .detail
