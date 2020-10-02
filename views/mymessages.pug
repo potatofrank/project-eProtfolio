@@ -20,7 +20,7 @@ block content
                     form(method = 'POST' action = message._id + '?_method=DELETE')
                         button.btn(type="submit") Delete
                 span
-                    button(onclick='myFunction()') View More
+                    button.view(onclick='myFunction()') View More
             #detail-message
                 .details
                     p Email Address: #{message.email}
@@ -30,7 +30,8 @@ block content
                     p Date of message sent: #{message.date}
                 .details
                     p Message: #{message.message}
-
+            br
+            br
 
     if(msg===0)
         .message-wrapper
