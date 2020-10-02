@@ -1,0 +1,153 @@
+
+.upload-container {
+    padding-top: 100px;
+}
+
+.upload-header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ff0000;
+}
+
+.upload-left {
+    width: 50%;
+    float: left;
+    height: 650px;
+    position: relative;
+}
+
+.upload-left form {
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+.upload-right {
+    margin-top: -3%;
+    width: 50%;
+    float: right;
+    height: 650px;
+    position: relative;
+}
+
+.upload-right h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.right-box {
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.upload-button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 50%;
+    min-width: 76px;
+    margin-left: 9%;
+    background: #00bcd4;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #fff;
+}
+
+.delete-button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 22%;
+    min-width: 62px;
+    background: #00bcd4;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #fff;
+}
+
+
+.drop-zone {
+    max-width: 300px;
+    height: 300px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ccc;
+    border: 4px dashed #373737;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone--input {
+    display: none;
+}
+
+.drop-zone--thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone--thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+    .upload-header {
+        font-size: 30px;
+    }
+
+    .upload-right h3 {
+        font-size: 14px;
+    }
+
+    .upload-button {
+        margin-left: 20%;
+    }
+
+    .drop-zone {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .upload-button {
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .delete-button {
+        font-size: 14px;
+        width: 18%;
+        min-width: 62px;
+        height: 25px;
+    }
+}
