@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .content {
     background-color: #e1e1e1;
 }
@@ -17,16 +16,6 @@
     background-position: center;
     background-size: cover;
     margin-top: 0px;
-=======
-.project-intro {
-    width: 100%;
-    height: 600px;
-    position: relative;
-    background-image: url('/image/orchestra.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
->>>>>>> master
 }
 
 .project-intro section{
@@ -50,7 +39,6 @@
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-<<<<<<< HEAD
 .avatar {
     position: relative;
     overflow: hidden;
@@ -58,28 +46,13 @@
     height: 225px;
     float: right;
     border-radius: 60%;
-=======
-.detail-img {
-    position: relative;
-    overflow: hidden;
-}
-.detail-img.right {
-    width: 325px;
-    height: 325px;
-    float: right;
-    border-radius: 50%;
->>>>>>> master
     margin-right: 5%;
     margin-top: 1%;
     shape-outside: circle();
 }
 
 .detail-text {
-<<<<<<< HEAD
     position: absolute;
-=======
-    position: relative;
->>>>>>> master
     width: 100%;
     text-align: center;
     font-size: 30px;

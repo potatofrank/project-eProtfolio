@@ -1,7 +1,3 @@
-const bcrypt = require("bcryptjs");
-const bcrypt_cpy = require("bcrypt");
-const passport = require("passport");
-const mongoose = require("mongoose");
 
 /* Load link model */
 const Link = require("../models/links");
