@@ -5,7 +5,7 @@ block head
     link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
     link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
     link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet")
-    link(rel='stylesheet', href='/stylesheets/aboutme.css')
+    link(rel='stylesheet', href='/stylesheets/home.css')
 block content
     section#header.aboutme-header
         h2.header-type Hi! My name is Hanan Davila
@@ -89,13 +89,14 @@ block content
         p
             a(href='/music') Login
             |  right now!
-        <div class="swiper-container">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/image/musicsheet1-1.jpg"></div>
-        <div class="swiper-slide"><img src="/image/musicsheet1-2.jpg"></div>
-        <div class="swiper-slide"><img src="/image/musicsheet1-3.jpg"></div>
-        </div>
-        </div>
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img(src='/image/musicsheet1-1.jpg')
+                .swiper-slide
+                    img(src='/image/musicsheet1-2.jpg')
+                .swiper-slide
+                    img(src='/image/musicsheet1-3.jpg')
     // begin section
     // end section
     script(src='https://code.jquery.com/jquery-3.5.1.js', integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=', crossorigin='anonymous')
