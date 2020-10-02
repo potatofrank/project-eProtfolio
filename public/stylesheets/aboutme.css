@@ -118,7 +118,7 @@ html {
 
 .aboutme-header .header-type {
     position: relative;
-    font-size: 80px;
+    font-size: 85px;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 100%;
@@ -130,7 +130,7 @@ html {
 
 .aboutme-header .header-intro {
     position: relative;
-    font-size: 70px;
+    font-size: 75px;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 100%;
@@ -767,34 +767,4 @@ body {
     outline: none;
     height: 50px;
     font-size: 24px;
-}
-
-.footer {
-    background-color: steelblue;
-    height: 100px;
-    padding-top: 2%;
-}
-
-.footer p{
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.social-links {
-    padding-top: 1%;
-}
-
-.social-links a{
-    color: white;
-    padding: 0px 5px 0px 5px;
-}
-
-.social-links a:hover {
-    color: lightskyblue;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
