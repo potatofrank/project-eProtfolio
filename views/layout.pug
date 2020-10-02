@@ -19,13 +19,13 @@ html
 
           if(!user)
             li(data-filter='.portfolio-tag-web')
-              a(href='/login') LOGIN
+              a(href='/users/login') LOGIN
           li(data-filter='.portfolio-tag-web')
             a(href='/music') MUSIC
           li(data-filter='.portfolio-tag-media')
             a(href='/projects') PROJECTS
           li(data-filter='.portfolio-tag-media')
-            a(href='/upload') UPLOAD
+            a(href='/messages') CONTACT ME
           if(user)
             li(data-filter='.portfolio-tag-web')
               a(href='/dashboard') DASHBOARD
@@ -38,7 +38,6 @@ html
           li(data-filter='*')
             a(href='/') HOME
     // end navbar header
-
     block content
     link(rel='stylesheet', href='/stylesheets/aboutme.css')
     //begin section

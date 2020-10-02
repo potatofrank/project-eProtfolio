@@ -1,0 +1,38 @@
+extends header
+block head
+block content
+    left-box-align
+        h1
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+
+        h1 To upload a link, go to the homepage of this music on sound cloud and click "share"
+        h1 After the prompt pops out, click "embed", simply copy everything in the box into the
+        h1 link section
+        form(action='/link/uploadLink', method='POST')
+            if (errorMessage)
+                .alert.alert-danger #{errorMessage}
+            else if(successMessage)
+                .alert.alert-danger #{successMessage}
+            .form-group
+                label(for='name') Song Name
+                input#name.form-control(type='name', name='name', value=name, placeholder='Enter song name here')
+            .form-group
+                label(for='link') Song link
+                input#link.form-control(type='link', name='link', value=link,  placeholder='Enter sound cloud link here')
+            button.btn.btn-primary(type='submit') Submit
+        br
+        if(links)
+            each link in links
+                h4 song name: #{link.name}
+                h4 url: #{link.link}
+                form(method = 'POST' action = link._id + '?_method=DELETE')
+                    button.btn(type="submit") Delete
+        else
+            p no links uploaded
+

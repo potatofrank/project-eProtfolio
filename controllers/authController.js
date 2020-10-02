@@ -1,7 +1,5 @@
 const bcrypt = require("bcryptjs");
-const bcrypt_cpy = require("bcrypt");
 const passport = require("passport");
-const mongoose = require("mongoose");
 
 /* Load user model */
 const User = require("../models/user");
@@ -33,7 +31,11 @@ exports.music_login_post = function (req, res, next) {
 
 // GET request to display login page
 exports.login_get = function (req, res, next) {
-    res.render("login", { message: req.flash('error') });
+    res.render("login", { message: req.flash('error'), user:req.user });
+};
+
+exports.register_get = function (req, res, next) {
+    res.render("register", { message: req.flash('error'), user:req.user });
 };
 
 exports.register_post = function (req, res, next) {
@@ -110,5 +112,5 @@ exports.register_post = function (req, res, next) {
 exports.logout_get = function (req, res, next) {
     req.logout();
     req.flash('logoutSuccess', 'You are logged out');
-    res.render("home", { successMessage: req.flash("logoutSuccess") });
+    res.render("home", { successMessage: req.flash("logoutSuccess"), user:req.user });
 };

@@ -7,3 +7,5 @@ module.exports = {
         res.render('login', { errorMessage: req.flash("loginError")});
     }
 }
+
+

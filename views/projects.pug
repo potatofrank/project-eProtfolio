@@ -1,31 +1,32 @@
 extends layout
 block head
+    meta(charset='UTF-8')
+    title Project
     link(rel='stylesheet', href='/stylesheets/project.css')
+
 block content
-    .project-intro
-        section
-            h2 Project
-    .detail-img.right
-        img(src='/image/hanan_davila.jpg')
-    .detail-text
-        | The University of Melbourne Symphony Orchestra 2018 - 2020
-        div
-            .detail-text
-                | Fire Relief Charity Concert 2019
-                div
-                    .detail-text
-                        | The Golden Stave Lunch Charity Concert May 2019
-                        div
-                            | div
-                            iframe(width='50%' height='300' scrolling='yes' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/615523962&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true')
-                            div(style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;')
-                                a(href='https://soundcloud.com/ashamaluevmusic' title='AShamaluevMusic' target='_blank' style='color: #cccccc; text-decoration: none;') AShamaluevMusic
-                                |  &middot;
-                                a(href='https://soundcloud.com/ashamaluevmusic/piano-cinematic' title='Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)' target='_blank' style='color: #cccccc; text-decoration: none;')
-                                    | Piano Cinematic - (No Copyright) Emotional Background Music For Vidos (DOWNLOAD MP3)
-                            iframe(width='50%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200823225&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true')
-                            div(style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;')
-                                a(href='https://soundcloud.com/ashamaluevmusic' title='AShamaluevMusic' target='_blank' style='color: #cccccc; text-decoration: none;') AShamaluevMusic
-                                |  &middot;
-                                a(href='https://soundcloud.com/ashamaluevmusic/cinematic-piano' title='Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos & Films' target='_blank' style='color: #cccccc; text-decoration: none;')
-                                    | Cinematic Piano - (No Copyright Music) Emotional Background Music For Videos &amp; Films
+    .container
+        .project-intro
+            section
+                h2 Project
+        .avatar
+            img(src='/image/hanan_davila.jpg')
+        .detail-text
+            | The University of Melbourne Symphony Orchestra 2018 - 2020
+        .detail-text
+            | Fire Relief Charity Concert 2019
+        .detail-text
+            | The Golden Stave Lunch Charity Concert May 2019
+        br
+        br
+
+        .soundCloud
+            each link in links
+                h4 #{link.name}
+                iframe(width='50%' height='300' scrolling='no' frameborder='no' allow='autoplay' src= link.link)
+                br
+                br
+                br
+
+
+

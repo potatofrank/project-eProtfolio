@@ -1,36 +1,25 @@
 extends layout
+block head
+    title Music Sheet
+    link(rel='stylesheet', href='/stylesheets/music.css')
 block content
-    head
-        meta(charset='UTF-8')
-        title Music Sheet
-        link(rel='stylesheet', href='/stylesheets/music.css')
-        style.
-            body {
-                background-color: #e1e1e1;
-            }
-            div{text-align:center;
-                margin-top: 50px;
-            }
+    .container
+        .music-intro
+            section
+                h2 Music Sheet
 
-        <div class="music-intro">
-        <section>
-        <h2>Music Sheet</h2>
-
-        </section>
-        </div>
-
-
-        div
-            font(size='50') Sheet 1
-        div
-            <embed src="/image/Sheet_Music_1.pdf" width = "50%" height = 700>
-
-
-
-
-        div
-            font(size='50') Sheet 2
-        div
-
-            <embed src="/image/Sheet_Music_2.pdf" width = "50%" height = 700>
+        if(files)
+            each file in files
+                .card.card-body.mb-3
+                    if(file.isImage)
+                        br
+                        br
+                        h2 #{file.filename}
+                        br
+                        br
+                        embed(src='pdf/' + file.filename width='50%' height='700')
+        else
+            p No files to show
+        br
+        br
 
