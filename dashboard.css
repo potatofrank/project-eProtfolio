@@ -1,25 +1,17 @@
-.black {
-  width: 50%;
-  float: left;
-  background: #A9A9A9;
-  height: 100vh;
-}
-
-.white{
-  width: 50%;
-  float: right;
-  background: #696969;
-  height: 100vh;
-}
-body{
-  width:100%;
-  position:absolute;
-  color: #E4E4E4;
+.black{
+  width: 100%;
+  background: black;
+  background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .login{
   height: 400px;
   width: 500px;
-  background: white;
+  background: #808080;
   position:absolute;
   top:150px;
   left:0;
@@ -28,34 +20,24 @@ body{
   border-radius:20px;
 }
 
-h1{
-  color: #808080;
-  font-size: 5em;
+h2{
+  color: white;
+  font-size: 1.5em;
   text-align: center;
   position: relative;
-  top:30px;
+  top:20px;
   font-family: 'Montserrat', sans-serif;
 }
 
-h2{
-  text-align: center;
-  position: relative;
-  top:100px;
-  color: #808080;
-  font-family: 'Montserrat', sans-serif;
-}
-.button{
+a{
   position:relative;
-  top:350px;
-  left:250px;
-  padding: 8px 20px;
-  cursor:pointer;
+  top:120px;
   border:0;
   outline:none;
-  color:#525252;
-  background:none;
-  transition:all .3s ease;
-  font-size: 19px;
-  font-family: montserrat;
-  border-radius:5px;
+  background-color: #A9A9A9;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
 }
