@@ -1,7 +1,7 @@
 
 .login{
     height: 750px;
-    width: 1700px;
+    width: 1450px;
     background: black;
     background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
     background-position: center;
@@ -9,15 +9,14 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
 h0{
     color: white;
     font-size: 25px;
     text-align: center;
     position: relative;
     display: block;
-    top:250px;
-    right:100px;
+    top:300px;
+    left:15px;
     font-family: 'Montserrat', sans-serif;
 }
 h7{
@@ -34,9 +33,9 @@ h7{
     border: 2px solid white;
     text-transform: uppercase;
 }
-a1{
+a{
     position:relative;
-    top:20px;
+    //top:20px;
     border:0;
     outline:none;
     background-color: #A9A9A9;
@@ -44,8 +43,9 @@ a1{
     text-align: center;
     display: block;
 }
-a1{
+.button{
     background-color: #A9A9A9;
+    bottom:20px;
     border: none;
     color: white;
     padding: 20px 80px;
