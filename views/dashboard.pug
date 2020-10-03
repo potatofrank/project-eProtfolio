@@ -17,14 +17,14 @@ block content
                 br
                 h0 Upload any files here:
                     br
-                    a1(href='/upload') Upload Files
-                    br
-                    a1(href='/link/uploadLink') Upload Links
-                    br
-                    a1(href='/users/mymessages') Check messages
+                    .button
+                        a(href='/upload') Upload Files
+                        br
+                        a(href='/link/uploadLink') Upload Links
+                        br
+                        a(href='/users/mymessages') Check messages
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
             if (errorMessage)
                 div.aldoctype html
-        .button
