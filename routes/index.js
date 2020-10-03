@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated } = require('../config/auth');
-const { ensureMessageAuthenticated } = require('../config/authMessage');
 
 const Link = require("../models/links");
 /* GET home page. */
@@ -13,7 +12,7 @@ router.get('/dashboard', ensureAuthenticated, function(req, res) {
   res.render('dashboard', {user:req.user});
 });
 
-router.get('/messages', ensureMessageAuthenticated, function(req, res) {
+router.get('/messages', function(req, res) {
     res.render('messages', {user:req.user});
 });
 
