@@ -649,7 +649,9 @@ html {
 .skill-container .skill-box:nth-child(3) {
     background: #23eaff;
 }
-
+#sheet{
+    padding-top: 100px;
+}
 .music-sheet h2{
     text-align: center;
     font-size: 40px;
