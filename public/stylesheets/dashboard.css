@@ -1,7 +1,7 @@
 
 .login{
     height: 750px;
-    width: 1700px;
+    width: 1450px;
     background: black;
     background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
     background-position: center;
@@ -9,7 +9,6 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
 h0{
     color: white;
     font-size: 25px;
@@ -17,7 +16,7 @@ h0{
     position: relative;
     display: block;
     top:250px;
-    right:100px;
+    left:15px;
     font-family: 'Montserrat', sans-serif;
 }
 h7{
