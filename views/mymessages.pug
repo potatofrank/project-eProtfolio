@@ -1,28 +1,48 @@
 extends header
 block head
+    link(rel='stylesheet', href='/stylesheets/mymessage.css')
 block content
-    left-box-align
-        h1
-        br
-        br
-        br
-        br
-        br
-        br
-        br
+    br
+    br
+    br
+    br
+    br
+    myheader
+        h1 My Message
 
-        h1 Messages to me
 
-        if(messages)
-            each message in messages
-                h4 name: #{message.first_name} #{message.family}
-                h4 email: #{message.email}
-                h4 Phone Number: #{message.phoneNumber}
-                h4 Date of message sent: #{message.date}
-                h4 message: #{message.message}
-                form(method = 'POST' action = message._id + '?_method=DELETE')
-                    button.btn(type="submit") Delete
-                br
-                br
-        if(msg===0)
-            p There's no messages to show
+    if(messages)
+        each message in messages
+            .message-wrapper
+                span.name #{message.first_name} #{message.family}
+                span.message  #{message.message}
+                span
+                    form(method = 'POST' action = message._id + '?_method=DELETE')
+                        button.btn(type="submit") Delete
+                span
+                    button.view(onclick='myFunction()') View More
+            #detail-message
+                .details
+                    p Email Address: #{message.email}
+                .details
+                    p Phone Number: #{message.phoneNumber}
+                .details
+                    p Date of message sent: #{message.date}
+                .details
+                    p Message: #{message.message}
+            br
+            br
+    if(msg===0)
+        .message-wrapper
+            span.message There is currently no message.
+    script.
+        function myFunction() {
+            var x = document.getElementById("detail-message");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        //form(method = 'POST' action = message._id + '?_method=DELETE')
+            //button.btn(type="submit") Delete

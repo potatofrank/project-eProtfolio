@@ -5,20 +5,25 @@ block content
     body
         .login
             if(user.isAdmin)
-                h2 Welcome Admin
-                h2 #{user.first_name} #{user.family_name}
+                h7 Welcome Admin #{user.first_name} #{user.family_name}
+                br
+                br
+                //h7 #{user.first_name} #{user.family_name}
             else
-                h2 Welcome visitor
-                h2 #{user.first_name} #{user.family_name}
-            h3 This is your dashboard
+                h7 Welcome visitor #{user.first_name} #{user.family_name}
+                //h7 #{user.first_name} #{user.family_name}
+            h0 This is your dashboard
+            if(user.isAdmin)
+                h0
+                    br
+                    .button
+                        a(href='/upload') Upload Files
+                        br
+                        a(href='/link/uploadLink') Upload Links
+                        br
+                        a(href='/users/mymessages') Check messages
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
             if (errorMessage)
                 div.aldoctype html
-
-            .button
-                a(href='/') return to homepage
-                if(user.isAdmin)
-                    a(href='/upload') edit music sheets
-                a(href='/users/logout') logout

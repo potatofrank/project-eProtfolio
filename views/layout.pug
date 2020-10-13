@@ -4,6 +4,7 @@ html
     title= "Hanan Davila"
     link(rel='stylesheet', href='/stylesheets/nav.css')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    script(src='https://kit.fontawesome.com/d66b1d76b9.js' crossorigin='anonymous')
     block head
   body
     // navbar header
@@ -39,22 +40,25 @@ html
             a(href='/') HOME
     // end navbar header
     block content
-    link(rel='stylesheet', href='/stylesheets/aboutme.css')
+    link(rel='stylesheet', href='/stylesheets/home.css')
     //begin section
     .section.fp-auto-height
       .footer
         p CONNECT WITH ME
         .social-links
           span
-            a(href='https://www.linkedin.com/in/bradleyengelhardt', target='_blank')
-              i.fa.fa-linkedin.fa-2x
+            icon(href='https://www.linkedin.com/in/bradleyengelhardt', target='_blank')
+              icon.fa.fa-linkedin.fa-2x
           span
-            a(target='_blank', href='https://twitter.com/bradengelhardt')
-              i.fa.fa-twitter.fa-2x
+            icon(target='_blank', href='https://twitter.com/bradengelhardt')
+              icon.fa.fa-twitter.fa-2x
           span
-            a(href='https://github.com/SquishyAndroid', target='_blank')
-              i.fa.fa-github.fa-2x
+            icon(href='https://github.com/SquishyAndroid', target='_blank')
+              icon.fab.fa-youtube.fa-2x
           span
-            a(href='https://codepen.io/SquishyAndroid/pens/public/')
-              i.fa.fa-codepen.fa-2x
-    // end section
+            icon(href='https://codepen.io/SquishyAndroid/pens/public/')
+              icon.fab.fa-facebook.fa-2x
+// end section
+
+
+

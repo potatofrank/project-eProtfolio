@@ -12,7 +12,6 @@ block content
             div.alert.alert-danger #{errorMessage}
         if (successMessage)
             div.alert.alert-success #{successMessage}
-
         form(action='/users/login', method='POST')
             .form-group
                 label(for='email') Email
