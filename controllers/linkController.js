@@ -4,7 +4,6 @@ const Link = require("../models/links");
 
 // POST request to handle login
 exports.link_post = function (req, res, next) {
-
     let { name, link } = req.body;
     let errors = [];
 
@@ -14,8 +13,10 @@ exports.link_post = function (req, res, next) {
     }
 
     if(!link.includes("soundcloud.com")){
-        req.flash('uploadError', 'Please include a proper link');
-        errors.push({ msg: 'Please include a proper link' });
+        if(!link.includes("youtube.com")){
+            req.flash('uploadError', 'Please include a proper embedded link');
+            errors.push({ msg: 'Please include a proper link' });
+        }
     }
 
     if (errors.length > 0) {
@@ -47,8 +48,10 @@ exports.link_post = function (req, res, next) {
                 let n = 0;
                 let n_1 = 0;
                 n = link.indexOf("src=\"");
-                n_1 = link.indexOf("/iframe>");
-                link = link.slice(n+5, n_1-3);
+                link = link.slice(n+5, link.length);
+                n_1 = link.indexOf("\"");
+                link = link.slice(0, n_1);
+                console.log(link);
                 const newLink = new Link({
                     name,
                     link,
