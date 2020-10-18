@@ -61,6 +61,7 @@ button{
 }
 .details{
     padding-left: 25px;
+    white-space: pre-line;
 }
 form{
     display: contents;
