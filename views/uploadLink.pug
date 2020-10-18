@@ -7,34 +7,35 @@ block head
     link(rel='stylesheet', href='/stylesheets/uploadlink.css')
     title Song Link Uploads
 block content
-    .uploadlink-container
-        .uploadlink-tip
-            h2
-                | To upload a link, at the music’s SoundCloud page, select
-                span &nbspshare->embed
-                | , copy the long string in the box and paste it below
-        .uploadlink-left
-            form(action='/link/uploadLink', method='POST')
-                if (errorMessage)
-                    .alert.alert-danger #{errorMessage}
-                else if(successMessage)
-                    .alert.alert-danger #{successMessage}
-                .row
-                    .inputBox
-                        label.linktitle(for='name') Song Name
-                        input#name.input(type='name', name='name', value=name, placeholder='Enter song name here')
-                .row
-                    .inputBox
-                        label.linktitle(for='link') Song Link
-                        input#link.input(type='link', name='link', value=link,  placeholder='Enter sound cloud link here')
-                button.upload-button(type='submit') Submit
-        .uploadlink-right
-            .right-box
-                if(links)
-                    each link in links
-                        h3 Song Name: #{link.name}
-                        form(method = 'POST' action = link._id + '?_method=DELETE')
-                            button.delete-button(type="submit") Delete
-                else
-                    p No links uploaded
+    body
+        .uploadlink-container
+            .uploadlink-tip
+                h2
+                    | To upload a link, at the music’s SoundCloud page, select
+                    span &nbspshare->embed
+                    | , copy the long string in the box and paste it below
+            .uploadlink-left
+                form(action='/link/uploadLink', method='POST')
+                    if (errorMessage)
+                        .alert.alert-danger #{errorMessage}
+                    else if(successMessage)
+                        .alert.alert-danger #{successMessage}
+                    .row
+                        .inputBox
+                            label.linktitle(for='name') Song Name
+                            input#name.input(type='name', name='name', value=name, placeholder='Enter song name here')
+                    .row
+                        .inputBox
+                            label.linktitle(for='link') Song Link
+                            input#link.input(type='link', name='link', value=link,  placeholder='Enter sound cloud link here')
+                    button.upload-button(type='submit') Submit
+            .uploadlink-right
+                .right-box
+                    if(links)
+                        each link in links
+                            h3 Song Name: #{link.name}
+                            form(method = 'POST' action = link._id + '?_method=DELETE')
+                                button.delete-button(type="submit") Delete
+                    else
+                        p No links uploaded
 
