@@ -2,28 +2,28 @@ extends layout
 block head
     link(rel='stylesheet', href='/stylesheets/dashboard.css')
 block content
-    .black
-    .white
+    body
         .login
             if(user.isAdmin)
-                h2 Welcome Admin
-                h2 #{user.first_name} #{user.family_name}
-            else
-                h2 Welcome visitor
-                h2 #{user.first_name} #{user.family_name}
-            h2 This is your dashboard
-            if(user.isAdmin)
+                h7 Welcome Admin #{user.first_name} #{user.family_name}
                 br
-                h2 Upload any files here
+                br
+                //h7 #{user.first_name} #{user.family_name}
+            else
+                h7 Welcome visitor #{user.first_name} #{user.family_name}
+                //h7 #{user.first_name} #{user.family_name}
+            h0 This is your dashboard
+            if(user.isAdmin)
+                h0
                     br
-                    a(href='/upload') Upload Files
-                    br
-                    a(href='/link/uploadLink') Upload Links
-                    br
-                    a(href='/users/mymessages') Check messages
+                    .button
+                        a(href='/upload') Upload Files
+                        br
+                        a(href='/link/uploadLink') Upload Links
+                        br
+                        a(href='/users/mymessages') Check messages
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
             if (errorMessage)
                 div.aldoctype html
-        .button
