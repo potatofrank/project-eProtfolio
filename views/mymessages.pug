@@ -29,7 +29,7 @@ block content
                 .details
                     p Date of message sent: #{message.date}
                 .details
-                    p Message: #{message.message}
+                    p Message: #{message.message.replace(/\n/g, "\n\n")}
             br
             br
     if(msg===0)
