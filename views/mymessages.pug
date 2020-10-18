@@ -12,16 +12,16 @@ block content
 
 
     if(messages)
-        each message in messages
+        each message,id in messages
             .message-wrapper
                 span.name #{message.first_name} #{message.family}
-                span.message  #{message.message}
+                span.message  #{message.message.substring(0,30)}
                 span
                     form(method = 'POST' action = message._id + '?_method=DELETE')
                         button.btn(type="submit") Delete
                 span
-                    button.view(onclick='myFunction()') View More
-            #detail-message
+                    button.view(onclick='myFunction(\'' + id + '\')') View More
+            .detail-message
                 .details
                     p Email Address: #{message.email}
                 .details
@@ -36,12 +36,12 @@ block content
         .message-wrapper
             span.message There is currently no message.
     script.
-        function myFunction() {
-            var x = document.getElementById("detail-message");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+        function myFunction(id) {
+            var x = document.getElementsByClassName("detail-message");
+            if (x[id].style.display === "block") {
+                x[id].style.display = "none";
             } else {
-                x.style.display = "none";
+                x[id].style.display = "block";
             }
         }
         //form(method = 'POST' action = message._id + '?_method=DELETE')
