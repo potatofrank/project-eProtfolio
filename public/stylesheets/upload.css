@@ -1,5 +1,5 @@
 body {
-    background-color: #e1e1e1;
+    background-color: #ebebeb;
 }
 
 .upload-container {
@@ -27,7 +27,7 @@ body {
 }
 
 .upload-right {
-    margin-top: -3%;
+    margin-top: -1%;
     width: 50%;
     float: right;
     height: 650px;
@@ -37,7 +37,7 @@ body {
 .upload-right h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .right-box {
@@ -51,7 +51,7 @@ body {
     font-size: 18px;
     width: 50%;
     min-width: 76px;
-    margin-left: 9%;
+    margin-left: 43px;
     background: #00bcd4;
     border-radius: 0;
     border: none;
@@ -64,6 +64,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    margin: 10px 0;
     width: 22%;
     min-width: 62px;
     background: #00bcd4;
@@ -87,7 +88,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    color: #ccc;
+    color: #9b9b9b;
     border: 4px dashed #373737;
     border-radius: 10px;
     margin-bottom: 30px;
