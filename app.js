@@ -128,7 +128,9 @@ app.get('/music', ensureMusicAuthenticated, function(req, res) {
             res.render('music', { files: false });
         } else {
             files.map(file => {
-                if (file.contentType === 'application/pdf')
+                if (file.contentType === 'application/pdf' ||
+                    file.contentType === 'image/jpeg' ||
+                    file.contentType === 'image/png')
                 {
                     file.isImage = true;
                 }else{

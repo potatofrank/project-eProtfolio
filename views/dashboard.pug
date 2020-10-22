@@ -22,6 +22,17 @@ block content
                         a(href='/link/uploadLink') Upload Links
                         br
                         a(href='/users/mymessages') Check messages
+            else
+                h0
+                    br
+                    .button
+                        a(href='/music') View Music Sheets
+                        br
+                        a(href='/projects') View author's projects
+                        br
+                        a(href='/messages') Contact author
+                        br
+                        a(href='/users/logout') Log out
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}

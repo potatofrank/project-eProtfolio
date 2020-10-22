@@ -22,11 +22,14 @@ block content
                         each file in files
                             .card
                                 if(file.isImage)
-                                    img(src='image/' + file.filename alt='')
+                                    h3 #{file.filename}
+                                    img(src='image/' + file.filename width='70%' height='700')
                                 else
                                     h3 #{file.filename}
                                 form(method = 'POST' action = '/files/' + file._id + '?_method=DELETE')
                                     button.delete-button(type="submit") Delete
+                                br
+                                br
                     else
                         p No files to show
         script(src='/javascripts/upload.js')
