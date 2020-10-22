@@ -2,15 +2,14 @@ myheader {
     background: #eaeaea;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 100px;
 }
 h1 {
-    padding-top: 50px;
     text-align:center;
     color: #666;
     text-shadow: 1px 1px 0px #FFF;
-    padding-bottom: 60px;
+
 
 }
 .message-wrapper {

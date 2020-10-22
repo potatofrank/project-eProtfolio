@@ -1,6 +1,7 @@
 
-.login1{
-    height: 90vh;
+.login{
+    height: 750px;
+    width: 1450px;
     background: black;
     background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
     background-position: center;
@@ -34,7 +35,7 @@ h7{
 }
 a{
     position:relative;
-    //top:20px;
+//top:20px;
     border:0;
     outline:none;
     background-color: #A9A9A9;

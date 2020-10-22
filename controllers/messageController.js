@@ -48,6 +48,7 @@ exports.message_get = function (req, res, next) {
         .lean()
         .then(function (doc) {
             msg_length = doc.length;
+            console.log(doc);
             res.render('mymessages', {msg: msg_length, messages: doc, user:req.user});
         });
 }

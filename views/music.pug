@@ -17,7 +17,10 @@ block content
                         h2 #{file.filename}
                         br
                         br
-                        embed(src='pdf/' + file.filename width='50%' height='700')
+                        if(file.contentType==="application/pdf")
+                            embed(src='pdf/' + file.filename width='50%' height='700')
+                        else
+                            img(src='image/' + file.filename width='50%' height='700')
         else
             p No files to show
         br

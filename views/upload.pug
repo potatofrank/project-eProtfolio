@@ -1,6 +1,7 @@
 extends header
 block head
     meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet")
     link(rel='stylesheet', href='/stylesheets/upload.css')
@@ -21,11 +22,14 @@ block content
                         each file in files
                             .card
                                 if(file.isImage)
-                                    img(src='image/' + file.filename alt='')
+                                    h3 #{file.filename}
+                                    img(src='image/' + file.filename width='70%' height='700')
                                 else
                                     h3 #{file.filename}
                                 form(method = 'POST' action = '/files/' + file._id + '?_method=DELETE')
                                     button.delete-button(type="submit") Delete
+                                br
+                                br
                     else
                         p No files to show
         script(src='/javascripts/upload.js')
