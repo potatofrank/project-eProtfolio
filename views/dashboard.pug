@@ -2,27 +2,39 @@ extends layout
 block head
     link(rel='stylesheet', href='/stylesheets/dashboard.css')
 block content
-    .login1
-        if(user.isAdmin)
-            h7 Welcome Admin #{user.first_name} #{user.family_name}
-            br
-            br
-            //h7 #{user.first_name} #{user.family_name}
-        else
-            h7 Welcome visitor #{user.first_name} #{user.family_name}
-            //h7 #{user.first_name} #{user.family_name}
-        h0 This is your dashboard
-        if(user.isAdmin)
-            h0
+    body
+        .login
+            if(user.isAdmin)
+                h7 Welcome Admin #{user.first_name} #{user.family_name}
                 br
-                .button
-                    a(href='/upload') Upload Files
+                br
+                //h7 #{user.first_name} #{user.family_name}
+            else
+                h7 Welcome visitor #{user.first_name} #{user.family_name}
+                //h7 #{user.first_name} #{user.family_name}
+            h0 This is your dashboard
+            if(user.isAdmin)
+                h0
                     br
-                    a(href='/link/uploadLink') Upload Links
+                    .button
+                        a(href='/upload') Upload Files
+                        br
+                        a(href='/link/uploadLink') Upload Links
+                        br
+                        a(href='/users/mymessages') Check messages
+            else
+                h0
                     br
-                    a(href='/users/mymessages') Check messages
-        if (message)
-            if (error.length > 0)
-                div.alert.alert-danger #{error}
-        if (errorMessage)
-            div.aldoctype html
+                    .button
+                        a(href='/music') View Music Sheets
+                        br
+                        a(href='/projects') View author's projects
+                        br
+                        a(href='/messages') Contact author
+                        br
+                        a(href='/users/logout') Log out
+            if (message)
+                if (error.length > 0)
+                    div.alert.alert-danger #{error}
+            if (errorMessage)
+                div.aldoctype html

@@ -13,6 +13,12 @@ exports.message_post = function (req, res, next) {
         errors.push({ msg: 'Please enter all fields' });
     }
 
+    if (isNaN(phoneNumber)) {
+        req.flash('messageError', 'Your phone number is in wrong type');
+        errors.push({ msg: 'Please enter all fields' });
+    }
+
+
     if (errors.length > 0) {
         res.render("messages", {
             errorMessage: req.flash("messageError"),
@@ -22,6 +28,7 @@ exports.message_post = function (req, res, next) {
             email,
             phoneNumber,
             message,
+            user: req.user
         });
     } else {
         const newMessage = new Message({
@@ -36,14 +43,13 @@ exports.message_post = function (req, res, next) {
             .save()
             .then((message) => {
                 req.flash('messageSuccess', 'You have successfully sent me a message');
-                res.render("messages", { successMessage: req.flash("messageSuccess") });
+                res.render("messages", { successMessage: req.flash("messageSuccess"), user: req.user });
             })
             .catch((err) => console.log(err));
     }
 };
 
 exports.message_get = function (req, res, next) {
-
     Message.find()
         .lean()
         .then(function (doc) {

@@ -2,47 +2,48 @@ extends header
 block head
     link(rel='stylesheet', href='/stylesheets/mymessage.css')
 block content
-    br
-    br
-    br
-    br
-    br
-    myheader
-        h1 My Message
+    body
+        br
+        br
+        br
+        br
+        br
+        myheader
+            h1 My Message
 
 
-    if(messages)
-        each message,id in messages
+        if(messages)
+            each message,id in messages
+                .message-wrapper
+                    span.name #{message.first_name} #{message.family}
+                    span.message  #{message.message.substring(0,30)}
+                    span
+                        form(method = 'POST' action = message._id + '?_method=DELETE')
+                            button.btn(type="submit") Delete
+                    span
+                        button.view(onclick='myFunction(\'' + id + '\')') View More
+                .detail-message
+                    .details
+                        p Email Address: #{message.email}
+                    .details
+                        p Phone Number: #{message.phoneNumber}
+                    .details
+                        p Date of message sent: #{message.date}
+                    .details
+                        p Message: #{message.message.replace(/\n/g, "\n\n")}
+                br
+                br
+        if(msg===0)
             .message-wrapper
-                span.name #{message.first_name} #{message.family}
-                span.message  #{message.message.substring(0,30)}
-                span
-                    form(method = 'POST' action = message._id + '?_method=DELETE')
-                        button.btn(type="submit") Delete
-                span
-                    button.view(onclick='myFunction(\'' + id + '\')') View More
-            .detail-message
-                .details
-                    p Email Address: #{message.email}
-                .details
-                    p Phone Number: #{message.phoneNumber}
-                .details
-                    p Date of message sent: #{message.date}
-                .details
-                    p Message: #{message.message.replace(/\n/g, "\n\n")}
-            br
-            br
-    if(msg===0)
-        .message-wrapper
-            span.message There is currently no message.
-    script.
-        function myFunction(id) {
-            var x = document.getElementsByClassName("detail-message");
-            if (x[id].style.display === "block") {
-                x[id].style.display = "none";
-            } else {
-                x[id].style.display = "block";
+                span.message There is currently no message.
+        script.
+            function myFunction(id) {
+                var x = document.getElementsByClassName("detail-message");
+                if (x[id].style.display === "block") {
+                    x[id].style.display = "none";
+                } else {
+                    x[id].style.display = "block";
+                }
             }
-        }
-        //form(method = 'POST' action = message._id + '?_method=DELETE')
-        //button.btn(type="submit") Delete
+            //form(method = 'POST' action = message._id + '?_method=DELETE')
+            //button.btn(type="submit") Delete
