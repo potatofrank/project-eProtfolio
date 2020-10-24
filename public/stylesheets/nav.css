@@ -47,6 +47,7 @@ p {
     left: 0;
     z-index: 600;
     padding: 1% 10px 10px 2%;
+    width: auto;
 }
 
 .nav-brand img {
@@ -168,6 +169,7 @@ p {
     background-color: steelblue;
     height: 100px;
     padding-top: 2%;
+    width: auto;
 }
 
 .footer p{
