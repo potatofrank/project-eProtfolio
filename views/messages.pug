@@ -20,12 +20,12 @@ block content
         form(action='/users/messages', method='POST')
             form789
                 h1 Should you have any questions, please do not hesitate to contact me :
-                if (errorMessage)
-                    .alert.alert-danger #{errorMessage}
-                else if(successMessage)
-                    .alert.alert-danger #{successMessage}
+                .response
+                    if (errorMessage)
+                        .alert.alert-danger #{errorMessage}
+                    else if(successMessage)
+                        .alert.alert-danger #{successMessage}
                 .contentform
-                    #sendmessage  Your message has been sent successfully. Thank you.
                     .leftcontact
                         .form-group
                             p
@@ -73,3 +73,5 @@ block content
                             textarea#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
                             .validation
                     button.bouton-contact(type='submit') Send
+
+
