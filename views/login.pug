@@ -3,8 +3,9 @@ block head
     link(rel='stylesheet', href='/stylesheets/login.css')
 block content
     .login
-        h1 Welcome
-        h2 Please Log in or Sign up
+        h10 Welcome
+        br
+        h11 Please Log in or Sign up
         if (message)
             if (error.length > 0)
                 div.alert.alert-danger #{error}

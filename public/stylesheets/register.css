@@ -4,7 +4,7 @@
 
 body {
     background: #606468;
-    background-image: url("https://p0.pxfuel.com/preview/599/70/418/lyrics-sheet-music-note-music.jpg");
+    background-image: url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -91,9 +91,7 @@ button[type=reset]:active  {
     transform: scale(0.85);
 }
 
-input[type=email],
-input[type=name],
-input[type=password]{
+input[type=email]{
     background-color: #A9A9A9;
     border: none;
     color: #0d0d0d;
@@ -102,8 +100,8 @@ input[type=password]{
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 7px 0px 0px 7px;
-    width: 60%;
+    margin: 7px 0px 0px 110px;
+    width: 50%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -113,17 +111,100 @@ input[type=password]{
     -webkit-border-radius: 6px 6px 6px 6px;
     border-radius: 6px 6px 6px 6px;
 }
-
+input[type=name1]{
+    background-color: #A9A9A9;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px 0px 0px 70px;
+    width: 50%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+input[type=name2]{
+    background-color: #A9A9A9;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px 0px 0px 50px;
+    width: 50%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+input[type=password1]{
+    background-color: #A9A9A9;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px 0px 0px 75px;
+    width: 50%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+input[type=password2] {
+    background-color: #A9A9A9;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px 0px 0px 7px;
+    width: 50%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
 input[type=email]:focus,
-input[type=name]:focus,
-input[type=password]:focus{
+input[type=name1]:focus,
+input[type=name2]:focus,
+input[type=password1]:focus,
+input[type=password2]:focus{
     background-color: #fff;
     border-bottom: 2px solid #E9967A;
 }
 
 input[type=email]::placeholder,
-input[type=name]::placeholder,
-input[type=password]::placeholder{
+input[type=name1]::placeholder,
+input[type=name2]::placeholder,
+input[type=password1]::placeholder,
+input[type=password2]::placeholder{
     color: black;
 }
 
