@@ -15,61 +15,62 @@ block content
     br
     
     bodyC
-        h5 Contact Me.
-    container
-        form(action='/users/messages', method='POST')
-            form789
-                h1 Should you have any questions, please do not hesitate to contact me :
-                if (errorMessage)
-                    .alert.alert-danger #{errorMessage}
-                else if(successMessage)
-                    .alert.alert-danger #{successMessage}
-                .contentform
-                    #sendmessage  Your message has been sent successfully. Thank you.
-                    .leftcontact
-                        .form-group
-                            p
-                                | First Name
-                                span *
-                            span.icon-case
-                                i.fa.fa-male
-                            input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
-                            .validation
-                        .form-group
-                            p
-                                | Family Name
-                                span *
-                            span.icon-case
-                                i.fa.fa-user
-                            input#family_name.form-control(type='name', name='family_name', value=family_name, placeholder='Enter Family Name')
-                            .validation
-                        .form-group
-                            p
-                                | E-mail
-                                span *
-                            span.icon-case
-                                i.fa.fa-envelope-o
-                            input#email.form-control(type='email', name='email', value=email, placeholder='Enter email')
-                            .validation
+        form789
+            h2 Contact Me.
+        container
+            form(action='/users/messages', method='POST')
+                form789
+                    h1 Should you have any questions, please do not hesitate to contact me :
+                    .response
+                        if (errorMessage)
+                            .alert.alert-danger #{errorMessage}
+                        else if(successMessage)
+                            .alert.alert-danger #{successMessage}
+                    .contentform
+                        .leftcontact
+                            .form-group
+                                p
+                                    | First Name
+                                    span *
+                                span.icon-case
+                                    i.fa.fa-male
+                                input#first_name.form-control(type='name', name='first_name', value=first_name, placeholder='Enter First Name')
+                                .validation
+                            .form-group
+                                p
+                                    | Family Name
+                                    span *
+                                span.icon-case
+                                    i.fa.fa-user
+                                input#family_name.form-control(type='name', name='family_name', value=family_name, placeholder='Enter Family Name')
+                                .validation
+                            .form-group
+                                p
+                                    | E-mail
+                                    span *
+                                span.icon-case
+                                    i.fa.fa-envelope-o
+                                input#email.form-control(type='email', name='email', value=email, placeholder='Enter email')
+                                .validation
 
 
-                    .rightcontact
+                        .rightcontact
 
-                        .form-group
-                            p
-                                | Phone number
-                                span *
-                            span.icon-case
-                                i.fa.fa-phone
-                            input#phoneNumber.form-control(type='phoneNumber', name='phoneNumber', value=phoneNumber, placeholder='Enter phone number')
-                            .validation
+                            .form-group
+                                p
+                                    | Phone number
+                                    span *
+                                span.icon-case
+                                    i.fa.fa-phone
+                                input#phoneNumber.form-control(type='phoneNumber', name='phoneNumber', value=phoneNumber, placeholder='Enter phone number')
+                                .validation
 
-                        .form-group
-                            p
-                                | Message
-                                span *
-                            span.icon-case
-                                i.fa.fa-comments-o
-                            textarea#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
-                            .validation
-                    button.bouton-contact(type='submit') Send
+                            .form-group
+                                p
+                                    | Message
+                                    span *
+                                span.icon-case
+                                    i.fa.fa-comments-o
+                                textarea#message.form-control(type='message', name='message', value=message,  placeholder='Enter your message here')
+                                .validation
+                        button.bouton-contact(type='submit') Send
