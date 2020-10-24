@@ -1,8 +1,6 @@
 \bodyC {
     background: #eaeaea;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    font-size: 50px;
     margin-bottom: 100px;
 }
 
@@ -34,7 +32,22 @@ form789 h1 {
 
     overflow: hidden;
 }
+form789 h2 {
+    font-size: 50px;
 
+    color: #666;
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 15px auto;
+    text-shadow: none;
+    text-align:center;
+
+    max-width:700px;
+    width:100%;
+
+
+    overflow: hidden;
+}
 form789 {
     border-radius: 5px;
     max-width:700px;
@@ -55,12 +68,12 @@ p {
     color:#333;
 }
 
-h5 {
-    text-align:center;
+formh5 {
+
+    text-align: center;
+    font-size: 50px;
     color: #666;
     text-shadow: 1px 1px 0px #FFF;
-
-
 }
 
 input {
@@ -175,6 +188,7 @@ i {
 }
 .response{
     text-align: center;
-    display: none   ;
-
+    display: block;
+    font-weight: bold;
+    color: #fd0000;
 }
