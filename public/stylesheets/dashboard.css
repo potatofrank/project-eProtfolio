@@ -1,12 +1,14 @@
+body{
 
+}
 .login{
     height: 750px;
-    width: 1450px;
+    width: auto;
     background: black;
     background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: inherit;
     background-attachment: fixed;
 }
 h0{
