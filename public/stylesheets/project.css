@@ -44,39 +44,27 @@
 }
 
 .avatar {
-    position: relative;
-    overflow: hidden;
-    float: right;
-    margin-right: 10%;
 
 
 }
 
-.avatar2 {
-    position: relative;
-    overflow: hidden;
-    float: right;
-    margin-right: 10%;
-    margin-top: 40%;
-}
 .avatar4 {
-
+    position: relative;
+    overflow: hidden;
     float: right;
-    margin-right: 10%;
-    margin-top: 20%;
+
+    shape-outside: circle();
+    border-radius: 60%;
+
 }
 .avatar3 {
-    shape-outside: circle();
     position: relative;
     overflow: hidden;
-
-
-    border-radius: 60%;
     float: right;
-
     margin-right: 10%;
     margin-top: 10%;
-    margin-bottom: 0px;
+    margin-bottom: 30%;
+
 }
 
 .project-detail-text {
