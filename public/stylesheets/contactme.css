@@ -175,6 +175,6 @@ i {
 }
 .response{
     text-align: center;
-    display: none   ;
+    display: block;
 
 }
