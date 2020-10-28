@@ -20,7 +20,8 @@ h1 {
 }
 .message-wrapper {
     margin: auto;
-    width: 60%;
+    width: 800px;
+
     padding: 10px;
     box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
     transition: all .1s ease-in-out
