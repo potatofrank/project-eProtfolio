@@ -124,20 +124,24 @@ Detailed of database model can be found in this repository located at docs/Docum
 <br /> 1. To get our code to work, first step is going to our [Github Repository](https://github.com/potatofrank/project-eProtfolio/tree/master),
 then you would see a green button says "code", click on it and you'll be able to download our latest patch of master branch, which will be the latest version of the application.
 You would need [WebStorm](https://www.jetbrains.com/webstorm/) ready. 
+<br />
 <br /> 2. Download the latest version of it and you can freely access it by signing up using your university account 
 or equivalent education account. 
+<br />
 <br /> 3. Unzip the file you've just downloaded from our repository. Drag the whole file into WebStorm. To the bottom left, you would see a terminal option, click on it. Then the 
 command line will pop up. Type in "npm install" to finish loading all the dependencies that are required for the application to run. 
 <br /> 4. On the top of the file directory, you can see a "bin" folder, expand this folder and choose the "www.js" file, this is the file we use to open a terminal for local host. 
 Inside "www", right click anywhere in the script and select "run". If everything goes fine, you will see "connected to mongoose" in the terminal, that means you will now be able to 
 test the application locally.
+<br />
 <br /> 5. Now you have made sure that the code will work locally, then create your own GitHub repository and push all the code of our application to your own repository, and it will normally
 be pushed to master branch. 
+<br />
 <br /> 6. Sign up a heroku account, it will be free for you. After your heroku account is ready, go to the "deploy" section, connect your github account with heroku, then choose the "master"
 branch or the branch you put the source code in, then click on "deploy", the application should be ready to use on the heroku server if nothing goes wrong, if you come into a crash, you 
 can use the heroku command line to debug your issues. 
-Source Code deployment:  
 <br />
+Source Code deployment:  
 <br />
 **Database** 
 <br />
