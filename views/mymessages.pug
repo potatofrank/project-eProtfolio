@@ -16,7 +16,7 @@ block content
             each message,id in messages
                 .message-wrapper
                     span.name #{message.first_name} #{message.family}
-                    span.message  #{message.message.substring(0,30)}
+                    span.message  #{message.message.substring(0,25)}
                     span
                         form(method = 'POST' action = message._id + '?_method=DELETE')
                             button.btn(type="submit") Delete
