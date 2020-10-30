@@ -54,8 +54,7 @@
     float: right;
 
     shape-outside: circle();
-    border-radius: 50%;
-    margin-bottom: 200px;
+    border-radius: 60%;
 
 }
 .avatar3 {
@@ -63,7 +62,7 @@
     overflow: hidden;
     float: right;
     margin-right: 10%;
-    margin-top: 1%;
+    margin-top: 10%;
     margin-bottom: 30%;
 
 }
