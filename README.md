@@ -41,7 +41,6 @@ User information encryption, mainly used for user password hashing when they sig
 <br />
 **Crypto**
 <br />
-<br />
 Encryption method for media data, randomnize binary data of the media files.
 <br />
 <br />
@@ -130,6 +129,7 @@ or equivalent education account.
 <br />
 <br /> 3. Unzip the file you've just downloaded from our repository. Drag the whole file into WebStorm. To the bottom left, you would see a terminal option, click on it. Then the 
 command line will pop up. Type in "npm install" to finish loading all the dependencies that are required for the application to run. 
+<br />
 <br /> 4. On the top of the file directory, you can see a "bin" folder, expand this folder and choose the "www.js" file, this is the file we use to open a terminal for local host. 
 Inside "www", right click anywhere in the script and select "run". If everything goes fine, you will see "connected to mongoose" in the terminal, that means you will now be able to 
 test the application locally.
@@ -147,6 +147,7 @@ Source Code deployment:
 <br />
 You would be using our database that is already set up, you don't have to do anything to the uri that is already included inside the application. 
 You can connect to the database once you successfully start the application or deploy the application.
+<br />
 <br />
 **Administrator credentials** 
 <br />
@@ -167,7 +168,7 @@ our client.
 -Ken lin <kenlin@student.unimelb.edu.au> <br />
 
 ## App Url
-[https://eportfolioteam3.herokuapp.com/]
+[https://hanandavila.herokuapp.com]
 
 ## License & copyright
 © Team Rigidbody, University of Melbourne
