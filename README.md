@@ -1,13 +1,13 @@
 # project Hanan Davila e-Portfolio system
 
-##Background
+## Background
 <br />
 This is an e-Portfolio system built for our clients who are doing masters in Melbourne university.<br />
 The main purpose of this app is to show visitors of this webisite the personal information, achievements<br />
 skills, projects and music sheets of our clients and allow our clients to add or delete links/music sheets <br />
 according to their own preferences.
 
-##Key Algorithms
+## Key Algorithms
 **Mongoose**
 <br />
 An ODM that provides a straightforward and schema-based solution to model your application data on top of MongoDB's native drivers.
@@ -57,7 +57,7 @@ The client will be instructed to copy the code for embedding their desired music
 <br />
 Using "files.find()" and "files.findOne()" functions, we're able to locate our desired files/records from mongoDB, and once we find them, we pass them to front-end using "render".
 <br />
-##Key Classes and Layers
+## Key Classes and Layers
 **app.js** 
 <br />
 the main file of the application, all APIs would be called out from here and all routes would be integrated here. Due to the special set up of our media uploading system, app.js also contains a lot of get and post functions relating to file uploading.
@@ -95,10 +95,10 @@ Contains all css files corresponding to each pug file, they're used for front-en
 <br />
 Contains all pug files
 
-##Description of the Database Structure
+## Description of the Database Structure
 Detailed of database model can be found in this repository located at docs/Documents
 
-##Deployment guidelines
+## Deployment guidelines
 **Source Code deployment** 
 <br /> 1. To get our code to work, first step is going to our [Github Repository](https://github.com/potatofrank/project-eProtfolio/tree/master),
 then you would see a green button says "code", click on it and you'll be able to download our latest patch of master branch, which will be the latest version of the application.
