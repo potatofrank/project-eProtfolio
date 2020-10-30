@@ -1,7 +1,8 @@
-\bodyC {
-    background: #eaeaea;
+.bodyC {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 100px;
+    height: 100vh;
+
 }
 
 .info p {
@@ -36,12 +37,12 @@ form789 h2 {
     font-size: 50px;
 
     color: #666;
-    padding: 22px 25px;
+
     border-radius: 5px 5px 0px 0px;
-    margin: 15px auto;
+    margin: auto;
     text-shadow: none;
     text-align:center;
-
+    padding-top: 20vh;
     max-width:700px;
     width:100%;
 
@@ -55,6 +56,7 @@ form789 {
     margin: 20% auto;
     background-color: #FFFFFF;
     overflow: hidden;
+
 }
 
 p span {
@@ -121,7 +123,7 @@ i {
 }
 
 .contentform {
-    padding: 40px 30px;
+
     margin: 25px auto;
     border-radius: 5px;
     max-width:700px;
@@ -129,6 +131,7 @@ i {
 
     background-color: #FFFFFF;
     overflow: hidden;
+    padding-top: 5vh;
 }
 
 .bouton-contact{
@@ -142,6 +145,7 @@ i {
     cursor: pointer;
     margin-top: 40px;
     font-size: 18px;
+
 }
 
 .leftcontact {
