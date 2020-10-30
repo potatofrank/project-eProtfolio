@@ -2,7 +2,7 @@ body{
 
 }
 .login{
-    height: 700px;
+    height: 100vh;
     width: auto;
     background: black;
     background-image:url("https://cdn.wallpapersafari.com/89/76/AWOZp2.jpg");
@@ -14,7 +14,7 @@ h0{
     text-align: center;
     position: relative;
     display: block;
-    top:300px;
+    top:35vh;
     left: auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +24,7 @@ h7{
     text-align: center;
     position: relative;
     display: block;
-    top:250px;
+    top:25vh;
     font-family: Tahoma, Geneva, sans-serif;
     letter-spacing: -1px;
     word-spacing: 4.4px;
