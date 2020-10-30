@@ -1,7 +1,6 @@
 # project Hanan Davila e-Portfolio system
 
 ## Background
-<br />
 This is an e-Portfolio system built for our clients who are doing masters in Melbourne university.<br />
 The main purpose of this app is to show visitors of this webisite the personal information, achievements<br />
 skills, projects and music sheets of our clients and allow our clients to add or delete links/music sheets <br />
