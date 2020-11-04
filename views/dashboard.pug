@@ -17,22 +17,22 @@ block content
                 h0
                     br
                     .button
-                        a(href='/upload') Upload Files
+                        a.c(href='/upload') Upload Files
                         br
-                        a(href='/link/uploadLink') Upload Links
+                        a.c(href='/link/uploadLink') Upload Links
                         br
-                        a(href='/users/mymessages') Check messages
+                        a.c(href='/users/mymessages') Check messages
             else
                 h0
                     br
                     .button
-                        a(href='/music') View Music Sheets
+                        a.c(href='/music') View Music Sheets
                         br
-                        a(href='/projects') View author's projects
+                        a.c(href='/projects') View author's projects
                         br
-                        a(href='/messages') Contact author
+                        a.c(href='/messages') Contact author
                         br
-                        a(href='/users/logout') Log out
+                        a.c(href='/users/logout') Log out
             if (message)
                 if (error.length > 0)
                     div.alert.alert-danger #{error}
